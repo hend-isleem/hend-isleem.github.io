@@ -656,6 +656,7 @@ td {
 }
 
 /* Font Awesome Social Icons --------------------------------------------------------- */
+
 .faico {
   margin: 0;
   padding: 0;
@@ -1101,6 +1102,8 @@ table a,
     font-size: 1rem;
   }
 
+  
+
   .sectiontitle,
   .testimonial article {
     max-width: none;
@@ -1126,7 +1129,7 @@ table a,
 
   #footer {
     padding-bottom: 50px;
-  } /* Not required, just looks a little better */
+  } 
 }
 
 /* Other ---------------------------------------------- */
