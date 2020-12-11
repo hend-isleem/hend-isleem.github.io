@@ -202,7 +202,7 @@ button {
   color: inherit;
   font-size: inherit;
   font-family: inherit;
-  /* vertical-align: middle; */
+  vertical-align: middle;
 }
 label {
   margin-bottom: 5px;
@@ -301,7 +301,7 @@ section {
 .two_quarter,
 .three_quarter {
   display: inline-block;
-  /* float: left; */
+  float: left;
   margin: 0 0 4.21052% 4.21052%;
   list-style: none;
 }
