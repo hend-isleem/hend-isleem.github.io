@@ -196,7 +196,7 @@ input,
 textarea,
 select,
 button {
-  display: block;
+  /* display: block; */
   resize: none;
   outline: none;
   color: inherit;
@@ -300,7 +300,7 @@ section {
 .one_quarter,
 .two_quarter,
 .three_quarter {
-  display: inline-block;
+  /* display: inline-block; */
   float: left;
   margin: 0 0 4.21052% 4.21052%;
   list-style: none;
