@@ -163,8 +163,7 @@ img {
   opacity: 1;
 }
 
-/* Fonts
---------------------------------------------------------------------------------------------------------------- */
+/* Fonts ------------------------------------------------------------ */
 body,
 input,
 textarea,
@@ -181,8 +180,7 @@ h6,
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-/* Forms
---------------------------------------------------------------------------------------------------------------- */
+/* Forms ---------------------------------------------------------------------- */
 form,
 fieldset,
 legend {
@@ -204,7 +202,7 @@ button {
   color: inherit;
   font-size: inherit;
   font-family: inherit;
-  vertical-align: middle;
+  /* vertical-align: middle; */
 }
 label {
   margin-bottom: 5px;
@@ -216,10 +214,9 @@ label {
 }
 ::placeholder {
   opacity: 1;
-} /* Makes sure the placeholder text is not transparent */
+}
 
-/* Generalise
---------------------------------------------------------------------------------------------------------------- */
+/* Generalise ------------------------------------------------------ */
 h1,
 h2,
 h3,
@@ -280,8 +277,7 @@ It should be used in conjunction with a second class or ID
   margin: 0 auto;
 }
 
-/* HTML 5 Overrides
---------------------------------------------------------------------------------------------------------------- */
+/* HTML 5 Overrides ---------------------------------------------------------------- */
 address,
 article,
 aside,
@@ -297,8 +293,7 @@ section {
   padding: 0;
 }
 
-/* Grid - RS-MQF 1140 V.2 - https://www.os-templates.com/free-basic-html5-templates/rs-mqf-1140
---------------------------------------------------------------------------------------------------------------- */
+/* Grid --------------------------------------------------------------- */
 .one_half,
 .one_third,
 .two_third,
@@ -306,7 +301,7 @@ section {
 .two_quarter,
 .three_quarter {
   display: inline-block;
-  float: left;
+  /* float: left; */
   margin: 0 0 4.21052% 4.21052%;
   list-style: none;
 }
@@ -333,8 +328,7 @@ section {
   width: 73.94736%;
 }
 
-/* Spacing
---------------------------------------------------------------------------------------------------------------- */
+/* Spacing -------------------------------------------------------------------- */
 .btmspace-10 {
   margin-bottom: 10px;
 }
