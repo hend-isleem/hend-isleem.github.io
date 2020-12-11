@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>user profile</title>
+  <link rel="stylesheet" href="../CSS/ghydaa/styles.css">
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".profile .icon_wrap").click(function () {
+        $(this).parent().toggleClass("active");
+        $(".notifications").removeClass("active");
+      });
+
+      $(".notifications .icon_wrap").click(function () {
+        $(this).parent().toggleClass("active");
+        $(".profile").removeClass("active");
+      });
+
+      $(".show_all .link").click(function () {
+        $(".notifications").removeClass("active");
+        $(".popup").show();
+      });
+
+      $(".close").click(function () {
+        $(".popup").hide();
+      });
+    });
+  </script>
+  <script type="text/javascript" src="../JS/java.js"></script>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="navbar">
+      <div class="navbar_left">
+        <div class="logo">
+          <b>VIR</b>
+        </div>
+      </div>
+
+      <div class="navbar_right">
+        <div class="notifications">
+          <div class="icon_wrap"> <i class="far fa-bell"></i></div>
+
+          <div class="notification_dd">
+            <ul class="notification_ul">
+              <li></li>
+              <li></li>
+              <li></li>
+
+              <li class="show_all">
+                <p class="link">Show All Activities</p>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="profile">
+          <div class="icon_wrap">
+            <img src="../user.png" alt="profile_pic">
+            <span style="width:max-content;" class="name">User name </span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+
+          <div class="profile_dd">
+            <ul class="profile_ul">
+              <li class="profile_li"><a class="profile" href="#"><span class="picon"><i class="fas fa-user-alt"></i>
+                  </span>My resume </a>
+
+              </li>
+
+
+
+              <li class="profile_li"><a class="profile" href="#"><span class="picon"><i class="fas fa-user-alt"></i>
+                  </span>Followings </a>
+
+              </li>
+
+              <li><a class="settings" href="#"><span class="picon"><i class="fas fa-cog"></i></span>Applications</a>
+              </li>
+              <li><a class="logout" href="#"><span class="picon"><i class="fas fa-sign-out-alt"></i></span>Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="dashboard--body">
+    <div class="page">
+      <div class="page--title">
+        Create Your Resume </div>
+      <div class="hint">
+        Please complete your resume carefully. <br> The more details given, the better chance you have of an employer
+        contacting you </div>
+      <br>
+      <div class="page1--title"> Personal / Contact Details </div>
+
+      <div class="page1--content">
+        <br>
+        <label for="name"> Name </label>
+        <form id="personal-form" name="personalForm" class="form-inline">
+
+          <input type="text" id="first_name" name="first_name" placeholder="First name" required="required">
+          <input type="text" id="last_name" name="last_name" placeholder="Last name" required="required">
+        </form>
+
+        <br>
+        <div id="user-birthdate">
+          <label for="birthday">Birth date</label>
+          <div class="form-inline">
+            <select id="birthdate_day" name="birthdate_day" class="input-c--input " required="required">
+              <option value="">Day</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+            </select> <select id="birthdate_month" name="birthdate_month" class="input-c--input " required="required">
+              <option value="">Month</option>
+              <option value="1">January</option>
+              <option value="2">February</option>
+              <option value="3">March</option>
+              <option value="4">April</option>
+              <option value="5">May</option>
+              <option value="6">June</option>
+              <option value="7">July</option>
+              <option value="8">August</option>
+              <option value="9">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select> <select id="birthdate_year" name="birthdate_year" class="input-c--input " required="required">
+              <option value="">Year</option>
+              <option value="2002">2002</option>
+              <option value="2001">2001</option>
+              <option value="2000">2000</option>
+              <option value="1999">1999</option>
+              <option value="1998">1998</option>
+              <option value="1997">1997</option>
+              <option value="1996">1996</option>
+              <option value="1995">1995</option>
+              <option value="1994">1994</option>
+              <option value="1993">1993</option>
+              <option value="1992">1992</option>
+              <option value="1991">1991</option>
+              <option value="1990">1990</option>
+              <option value="1989">1989</option>
+              <option value="1988">1988</option>
+              <option value="1987">1987</option>
+              <option value="1986">1986</option>
+              <option value="1985">1985</option>
+              <option value="1984">1984</option>
+              <option value="1983">1983</option>
+              <option value="1982">1982</option>
+              <option value="1981">1981</option>
+              <option value="1980">1980</option>
+              <option value="1979">1979</option>
+              <option value="1978">1978</option>
+              <option value="1977">1977</option>
+              <option value="1976">1976</option>
+              <option value="1975">1975</option>
+              <option value="1974">1974</option>
+              <option value="1973">1973</option>
+              <option value="1972">1972</option>
+              <option value="1971">1971</option>
+              <option value="1970">1970</option>
+              <option value="1969">1969</option>
+              <option value="1968">1968</option>
+              <option value="1967">1967</option>
+              <option value="1966">1966</option>
+              <option value="1965">1965</option>
+              <option value="1964">1964</option>
+              <option value="1963">1963</option>
+              <option value="1962">1962</option>
+              <option value="1961">1961</option>
+              <option value="1960">1960</option>
+              <option value="1959">1959</option>
+              <option value="1958">1958</option>
+              <option value="1957">1957</option>
+              <option value="1956">1956</option>
+              <option value="1955">1955</option>
+              <option value="1954">1954</option>
+              <option value="1953">1953</option>
+              <option value="1952">1952</option>
+              <option value="1951">1951</option>
+              <option value="1950">1950</option>
+            </select> </div>
+        </div>
+        <br>
+        <div id="user-email">
+          <label for="email">Email</label>
+          <form class="form-inline">
+            <input type="email" id="email" name="email" placeholder="email@domain.com" required="required">
+          </form>
+        </div>
+        <br>
+        <label for="gender">Gender</label>
+        <br>
+        <div class="form-inline">
+          <select style="width: 37%; height: max-content;" class="input-c--input " id="gender" name="gender"
+            required="required">
+            <option value="m">Male</option>
+            <option value="f">Female</option>
+          </select>
+        </div>
+
+        <br>
+        <div id="country">
+          <label for="country_id">Country</label>
+          <select style="width: 37%; height: max-content;" id="country_id" name="country_id" class="input-c--input "
+            required="required">
+            <option value="">Select country</option>
+            <option value="25">Palestine</option>
+            <option value="38">Bahrain</option>
+            <option value="39">China</option>
+            <option value="40">Cyprus</option>
+            <option value="41">Georgia</option>
+            <option value="42">Hong Kong</option>
+            <option value="43">India</option>
+            <option value="44">Indonesia</option>
+            <option value="45">Iran</option>
+            <option value="46">Iraq</option>
+            <option value="47">Japan</option>
+            <option value="48">Jordan</option>
+            <option value="49">Kuwait</option>
+            <option value="50">Lebanon</option>
+            <option value="51">Malaysia</option>
+            <option value="52">Oman</option>
+            <option value="53">Pakistan</option>
+            <option value="54">Yemen</option>
+            <option value="55">Philippines</option>
+            <option value="56">Qatar</option>
+            <option value="57">Saudi Arabia</option>
+            <option value="58">Singapore</option>
+            <option value="59">South Korea</option>
+            <option value="60">Syria</option>
+            <option value="61">Taiwan</option>
+            <option value="62">Turkey</option>
+            <option value="63">United Arab Emirates</option>
+            <option value="64">Albania</option>
+            <option value="65">Andorra</option>
+            <option value="66">Austria</option>
+            <option value="67">Belarus</option>
+            <option value="68">Belgium</option>
+            <option value="69">Bosnia and Herzegovina</option>
+            <option value="70">Bulgaria</option>
+            <option value="71">Croatia</option>
+            <option value="72">Cyprus</option>
+            <option value="73">Czech Republic</option>
+            <option value="74">Denmark</option>
+            <option value="75">Germany</option>
+            <option value="76">Estonia</option>
+            <option value="77">Faroe Islands</option>
+            <option value="78">Finland</option>
+            <option value="79">France</option>
+            <option value="80">Germany</option>
+            <option value="81">Greece</option>
+            <option value="82">Hungary</option>
+            <option value="83">Iceland</option>
+            <option value="84">Ireland</option>
+            <option value="85">Italy</option>
+            <option value="86">Latvia</option>
+            <option value="87">Liechtenstein</option>
+            <option value="88">Lithuania</option>
+            <option value="89">Luxembourg</option>
+            <option value="90">Macedonia</option>
+            <option value="91">Malta</option>
+            <option value="92">Metropolitan France</option>
+            <option value="93">Moldova</option>
+            <option value="94">Monaco</option>
+            <option value="95">Netherlands</option>
+            <option value="96">Norway</option>
+            <option value="97">Poland</option>
+            <option value="98">Portugal</option>
+            <option value="99">Romania</option>
+            <option value="100">Russia</option>
+            <option value="101">San Marino</option>
+            <option value="102">Serbia and Montenegro</option>
+            <option value="103">Slovakia</option>
+            <option value="104">Slovenia</option>
+            <option value="105">Spain</option>
+            <option value="106">Sweden</option>
+            <option value="107">Switzerland</option>
+            <option value="108">Ukraine</option>
+            <option value="109">United Kingdom</option>
+            <option value="110">Australia</option>
+            <option value="111">United States</option>
+            <option value="112">Argentina</option>
+            <option value="113">Brazil</option>
+            <option value="114">British Virgin Islands</option>
+            <option value="115">Canada</option>
+            <option value="116">Chile</option>
+            <option value="117">Mexico</option>
+            <option value="118">Venezuela</option>
+            <option value="119">Algeria</option>
+            <option value="120">Egypt</option>
+            <option value="121">Libya</option>
+            <option value="122">Mauritania</option>
+            <option value="123">Mayotte</option>
+            <option value="124">Morocco</option>
+            <option value="125">South Africa</option>
+            <option value="126">Sudan</option>
+            <option value="127">Tunisia</option>
+            <option value="320">New Zealand</option>
+          </select>
+
+        </div>
+        <br>
+        <div id="user-phone">
+          <label for="phone">phone number</label>
+          <form class="form-inline">
+            <input type="text" id="phone" name="phone" placeholder="enter your phone" required="required">
+            <input type="text" id="phone2" name="phone" placeholder="phone optional">
+          </form>
+        </div>
+
+        <br>
+        <div id="user-photo">
+
+          <form class="form-inline">
+            <label for="photo">upload your photo </label>
+            <button style="width: 20%;"> choose </button>
+          </form>
+        </div>
+
+        <br>
+        <hr>
+        <div style=" line-height: 80px; height: 80px; width: 100%; border: 1 px solid #264e90;  ">
+          <div class="form-inline" style="margin: 15px; background: #f0f5f5">
+            <label style="text-align: left; margin-left: 15px;" class="page1--title">Education </label>
+            <button onclick="myFunction('myDIV')">
+              Add Education
+            </button>
+
+          </div>
+        </div>
+
+
+        <div id="myDIV" style=" line-height: 80px; height: 80px; width: 100%; border: 1 px solid #264e90;  ">
+          <div class="form-inline" style="margin: 15px;  background: #f0f5f5">
+            <label for="Degree" style="margin-left: 15px;">Degree</label>
+            <div class="form-inline">
+              <select id="degree-0" name="degree" style="width: 100%; height: max-content;" class="input-c--input "
+                placeholder="Degree"></option>
+                <option value="high_school">High school</option>
+                <option value="diploma">Diploma</option>
+                <option value="higher_diploma">Higher diploma</option>
+                <option value="bachelor">Bachelor's</option>
+                <option value="master_degree">Master's</option>
+                <option value="doctorate">Doctorate</option>
+              </select>
+            </div>
+
+
+            <label for="Field Of Study" style="margin-left: 15px;">Field Of Study</label>
+            <div class="form-inline">
+              <select style="width: 100%; height: max-content;" class="input-c--input " id="filed" name="filed"
+                required="required">
+                <option value="high_school">High school</option>
+                <option value="diploma">Diploma</option>
+                <option value="higher_diploma">Higher diploma</option>
+                <option value="bachelor">Bachelor's</option>
+                <option value="master_degree">Master's</option>
+                <option value="doctorate">Doctorate</option>
+              </select>
+            </div>
+
+          </div>
+        </div>
+        <br>
+        <hr>
+        <div style=" line-height: 80px; height: 80px; width: 100%; border: 1 px solid #264e90;  ">
+          <div class="form-inline" style="margin: 15px; background: #f0f5f5">
+            <label style="text-align: left; margin-left: 15px;" class="page1--title">Experience </label>
+            <button onclick="myFunction('myDIV2')">
+              Add Experience
+            </button>
+
+          </div>
+        </div>
+
+        <div id="myDIV2" style=" line-height: 80px; height: 80px; width: 100%; border: 1 px solid #264e90;  ">
+          <div class="form-inline" style="margin: 15px;  background: #f0f5f5">
+            <label for="Company Name" style="margin-left: 15px;">Company Name *</label>
+            <input class="form-inline" type="text" id="comp_name" name="comp" placeholder="Company Name">
+
+            <label for="Job Title" style="margin-left: 15px;">Job Title*</label>
+            <input class="form-inline" type="text" id="user_job" name="job" placeholder="Job Title">
+
+          </div>
+        </div>
+        <br>
+        <hr>
+        <div style=" line-height: 80px; height: 80px; width: 100%; border: 1 px solid #264e90;  ">
+          <div class="form-inline" style="margin: 15px; background: #f0f5f5">
+            <label style="text-align: left; margin-left: 15px;" class="page1--title">Skills </label>
+            <button onclick="myFunction('myDIV3')">
+              Add Skills
+            </button>
+
+          </div>
+        </div>
+        <div id="myDIV3" style=" line-height: 80px; height: 80px; width: 100%; border: 1 px solid #264e90;  ">
+          <div class="form-inline" style="margin: 15px;  background: #f0f5f5">
+            <label style="text-align: left; margin-left: 15px;">You can still add: <strong
+                class="ng-binding">50</strong></label>
+
+            <tags-input on-tag-adding="onSkillAdd($tag)" max-tags="50" ng-model="skills" placeholder="Add a tag"
+              replace-spaces-with-dashes="false">
+
+              <ul class="tag-list"></ul>
+              <input class="form-inline" autocomplete="off" type="text" placeholder="Add a tag" spellcheck="true"
+                style="width: 200px;">
+              <span class="input" style="visibility: hidden; width: auto; white-space: pre; display: none;">Add a
+                tag</span>
+            </tags-input>
+
+
+
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+</body>
+
+</html>
