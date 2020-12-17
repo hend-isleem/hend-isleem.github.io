@@ -7,6 +7,17 @@
     justify-content: space-around;
 }
 
+
+.companyHeaderList {
+    background-image: url(https://t4.ftcdn.net/jpg/03/56/04/97/240_F_356049725_UvW2FSyPH4E0QR0sJX8o3KUKpKSpzswJ.jpg);
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center
+  }
+
 .photo{
     border-radius: 50%;
     width: 10em;
@@ -57,9 +68,19 @@ input[type=submit]:hover {
     background-color: #f2f2f2;
     padding: 10px;
 }
-
+.company_div_list{
+    margin: 10%;
+}
 .NavChoice {
     position: sticky;
     top: 0px;
     background-color:#f2f2f2;
   }
+
+.company_div_table{
+    width: 86%;
+}
+
+.flex_container1{
+    justify-content: center;
+}

@@ -18,7 +18,10 @@
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center
 }
+
 
 .companyFooter {
   background-color: black;
@@ -30,7 +33,7 @@
 }
 
 .company_p {
-  font-size: 16px;
+  font-size: 13px !important;
   max-width: 700px;
   line-height: 24px;
   color: #494949;
@@ -118,11 +121,6 @@ flex-container2 {
 
 .card-title {
   margin-bottom: 0.75rem;
-}
-
-
-h4 {
-  font-size: 1.5rem;
 }
 
 .company_h{
