@@ -1,213 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
-    
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="../../CSS/Lyna_company_CSS/companyProfile.css">
-<style>
-    .flex-cont,.response{
-        display: flex;
-    }
 
-    .response{
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    
-    img{
-        border-radius: 50%;
-        width: 10em;
-        height: 10em;
-    }
-    a{
-        color: black!important;
-    }
-    .accept{
-        background-color:rgb(233, 76, 55);
-    }
-    .reject{
-        background-color: rgb(39, 146, 39);
-    }
-    input[type=text], select {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../../CSS/Lyna_company_CSS/companyProfile.css">
+    <style>
+        .flex-cont,
+        .response {
+            display: flex;
+        }
+
+        .response {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 10em;
+            height: 10em;
+        }
+
+        a {
+            color: black !important;
+        }
+
+        .accept {
+            background-color: rgb(233, 76, 55);
+        }
+
+        .reject {
+            background-color: rgb(39, 146, 39);
+        }
+
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
         }
 
         input[type=submit] {
-        width: 100%;
-        background-color: #4CAF50;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
         }
 
         input[type=submit]:hover {
-        background-color: #45a049;
+            background-color: #45a049;
         }
 
         div {
-        border-radius: 5px;
-        background-color: #f2f2f2;
-        padding: 20px;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
         }
-</style>
-    
+    </style>
+    <link href="../../CSS/Hend/styles/layout.css" rel="stylesheet" type="text/css" media="all" />
 
 </head>
+
 <body>
+    <!--Header Start -->
+    <!-- This is for nav -->
+    <div class="hendwrapper hendrow1">
+        <header id="header" class=" hendheader hendhoc hendclear">
+            <div id="logo" class="hendfl_left">
+                <h1><a href="../../index.html">VIR</a></h1>
+            </div>
+            <nav id="mainav" class="hendfl_right">
+                <ul class="hendclear">
+                    <li class="hendactive"><a href="../../index.html">Home</a></li>
+                    <li>
+                        <a class="henddrop" href="#">Pages</a>
+                        <ul>
+                            <li><a href="../Hadeel/job-details.html">job details</a></li>
+                            <li><a href="../Lyna_company_html/companyProfile.html">Company Profile</a></li>
+                            <li><a href="../Lyna_company_html/companyProfile_forPublic.html">Company Profile
+                                    public</a></li>
+                            <li><a href="../Lyna_company_html/applicantsList.html">applicats list</a></li>
+                            <li><a href="../Lyna_company_html/companyUpdateInfo.html">Company update info</a></li>
+                            <li><a href="../Ghydaa/tst.html">user Profile</a></li>
+                            <li><a href="../Hend/font-icons.html">Font Icons</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="henddrop" href="#">Dropdown</a>
+                        <ul>
+                            <li><a href="#">Level 2</a></li>
+                            <li>
+                                <a class="henddrop" href="#">Level 2 + Drop</a>
+                                <ul>
+                                    <li><a href="#">Level 3</a></li>
+                                    <li><a href="#">Level 3</a></li>
+                                    <li><a href="#">Level 3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Level 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../Hadeel/job-listing.html">JOB lists</a></li>
+                    <li><a href="../Lyna_company_html/companyLists.html">Companies</a></li>
+                    <li><a href="../Ghydaa/userCard.html">freelancers</a></li>
+                    <li>
+                        <a href="Login_up/log.html" title="Login"><i class="fas fa-sign-in-alt"></i></a>
+                    </li>
+                    <li>
+                        <a href="Login_up/signup.html" title="Sign Up"><i class="fas fa-edit"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <!-- This is for nav -->
+    <!--Header End -->
     <div class="flex-cont">
-        <img class="icon" src="../../images/Lyna_company_images/jobsearch_87661.png" >
+        <img class="icon" src="../../images/Lyna_company_images/jobsearch_87661.png">
         <h1>Opportunity Name</h1>
     </div>
 
-<div class="flex-container1">
-    <!--Details/application-->
-    <div class="flex-item1">
-        <h3>Details</h3>
-        <div>
-        <form action="">
-            <label for="">Application time</label>
-            <input type="text" value="1/1/2010">
-            <label for="">Application time</label>
-            <input type="text" value="1/1/2010">
-            <label for="">Application time</label>
-            <input type="text" value="1/1/2010">
-            <input type="submit" value="Accept">
-            <input type="submit" value="Reject">
-        </form>
+    <div class="flex-container1">
+        <!--Details/application-->
+        <div class="flex-item1">
+            <h3>Details</h3>
+            <div>
+                <form action="">
+                    <label for="">Application time</label>
+                    <input type="text" value="1/1/2010">
+                    <label for="">Application time</label>
+                    <input type="text" value="1/1/2010">
+                    <label for="">Application time</label>
+                    <input type="text" value="1/1/2010">
+                    <input type="submit" value="Accept">
+                    <input type="submit" value="Reject">
+                </form>
+            </div>
+        </div>
+        <!--End Details/application-->
+        <div class="resumes flex-item2" id="posts">
+            <h4 id="NavChoice"><strong>Applicants List</strong></h4>
+            <div>
+                <table class="w3-table-all w3-card-4">
+                    <thead>
+                        <tr>
+                            <th>Candidate</th>
+                            <th>Resume Title</th>
+                            <th>Location</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--table raw-->
+                        <tr>
+                            <td>
+                                <div black class="flex-cont">
+                                    <div>
+                                        <a href="#">
+                                            <img alt="" src="../../images/Lyna_company_images/person1.jpg" class="photo"
+                                                height="40" width="40">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <h2>
+                                            <a href="">Suresh Patel</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <a href="#"><strong>Web Developer</strong></a>
+                            </td>
+                            <td>
+                                <i></i>&nbsp;<em>india</em>
+                            </td>
+                            <td><strong>Designer, Developer</strong></td>
+                        </tr>
+                        <!--table raw-->
+                        <tr>
+                            <td>
+                                <div black class="flex-cont">
+                                    <div>
+                                        <a href="#">
+                                            <img alt="" src="../../images/Lyna_company_images/person2.jpg" class="photo"
+                                                height="40" width="40">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <h2>
+                                            <a href="">Cammy</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <a href="#"><strong>Front Desk Specialist</strong></a>
+                            </td>
+                            <td>
+                                <i></i>&nbsp;<em>Atlanta</em>
+                            </td>
+                            <td><strong>Customer Service</strong></td>
+                        </tr>
+                        <!--table raw-->
+                        <tr>
+                            <td>
+                                <div black class="flex-cont">
+                                    <div>
+                                        <a href="#">
+                                            <img alt="" src="../../images/Lyna_company_images/person3.jpg" class="photo"
+                                                height="40" width="40">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <h2>
+                                            <a href="">Bettymesfin</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <a href="#"><strong>Web Developer</strong></a>
+                            </td>
+                            <td>
+                                <i></i>&nbsp;<em>Atlanta</em>
+                            </td>
+                            <td><strong>Information Technology</strong></td>
+                        </tr>
+                        <!--table raw-->
+                        <tr>
+                            <td>
+                                <div black class="flex-cont">
+                                    <div>
+                                        <a href="#">
+                                            <img alt="" src="../../images/Lyna_company_images/person4.jpg" class="photo"
+                                                height="40" width="40">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <h2>
+                                            <a href="">Jane Doe</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <a href="#"><strong>Marketing Online</strong></a>
+                            </td>
+                            <td>
+                                <i></i>&nbsp;<em>Berlin</em>
+                            </td>
+                            <td><strong>Marketing</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
-    <!--End Details/application-->
-    <div class="resumes flex-item2" id="posts">
-        <h4 id="NavChoice"><strong>Applicants List</strong></h4>
-        <div>
-            <table  class="w3-table-all w3-card-4">
-                <thead>
-                    <tr>
-                        <th>Candidate</th>
-                        <th>Resume Title</th>
-                        <th>Location</th>
-                        <th>Category</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!--table raw-->
-                    <tr>
-                        <td>
-                            <div black class="flex-cont">
-                                <div >
-                                    <a href="#">
-                                        <img alt="" src="../../images/Lyna_company_images/person1.jpg" class="photo" height="40" width="40">
-                                    </a>
-                                </div>
-                                <div>
-                                    <h2 >
-                                        <a href="">Suresh Patel</a>
-                                    </h2>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a href="#"><strong>Web Developer</strong></a>
-                        </td>
-                        <td>
-                            <i></i>&nbsp;<em>india</em>
-                        </td>
-                        <td><strong>Designer, Developer</strong></td>
-                    </tr>
-                    <!--table raw-->
-                    <tr>
-                        <td>
-                            <div black class="flex-cont">
-                                <div>
-                                    <a href="#">
-                                        <img alt="" src="../../images/Lyna_company_images/person2.jpg" class="photo" height="40" width="40">
-                                    </a>
-                                </div>
-                                <div>
-                                    <h2 >
-                                        <a href="">Cammy</a>
-                                    </h2>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a href="#"><strong>Front Desk Specialist</strong></a>
-                        </td>
-                        <td >
-                            <i ></i>&nbsp;<em>Atlanta</em>
-                        </td>
-                        <td ><strong>Customer Service</strong></td>
-                    </tr>
-                    <!--table raw-->
-                    <tr>
-                        <td>
-                            <div black class="flex-cont">
-                                <div>
-                                    <a href="#">
-                                        <img alt="" src="../../images/Lyna_company_images/person3.jpg" class="photo" height="40" width="40">
-                                    </a>
-                                </div>
-                                <div>
-                                    <h2 >
-                                        <a href="">Bettymesfin</a>
-                                    </h2>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a href="#"><strong>Web Developer</strong></a>
-                        </td>
-                        <td >
-                            <i ></i>&nbsp;<em>Atlanta</em>
-                        </td>
-                        <td ><strong>Information Technology</strong></td>
-                    </tr>
-                    <!--table raw-->
-                    <tr>
-                        <td>
-                            <div black class="flex-cont">
-                                <div>
-                                    <a href="#">
-                                        <img alt="" src="../../images/Lyna_company_images/person4.jpg" class="photo" height="40" width="40">
-                                    </a>
-                                </div>
-                                <div>
-                                    <h2 >
-                                        <a href="">Jane Doe</a>
-                                    </h2>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a href="#"><strong>Marketing Online</strong></a>
-                        </td>
-                        <td >
-                            <i ></i>&nbsp;<em>Berlin</em>
-                        </td>
-                        <td ><strong>Marketing</strong></td>
-                    </tr> 
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>
-<!--
+    <!--
 <div class="flex-container1">
     <div><button class="btn back btn-secondary ">Back</button></div>  
 </div>
 -->
+    <!-- footer is start :) -->
+    <div class="hendwrapper hendrow4">
+        <footer id="footer" class="hendhoc hendclear">
+            <div class="hendone_quarter hendfirst">
+                <h6 class="hendheading">about VIR</h6>
+                <p>
+                    Luctus et dolor nulla facilisi fusce sit amet magna non odio
+                    molestie egestas nullam id odio.
+                </p>
+                <p class="hendbtmspace-30">
+                    Quis risus placerat aliquam nunc nec nunc morbi vel nisi sit amet
+                    orci adipiscing pharetra [<a href="#">more <i class="fas fa-arrow-right"></i></a>]
+                </p>
+                <ul class="hendfaico clear">
+                    <li>
+                        <a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a>
+                    </li>
+                    <li>
+                        <a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hendone_quarter">
+                <h6 class="hendheading">Contact us</h6>
+                <ul class="hendnospace hendlinklist">
+                    <li>
+                        <div class="hendblock hendclear">
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                            <span><strong>Send us a mail:</strong><br />
+                                vir@vir.com</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hendblock hendclear">
+                            <a href="#"><i class="fas fa-phone"></i></a>
+                            <span><strong>Give us a call:</strong><br />
+                                +00 (123) 456 7890
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="hendone_quarter">
+                <h6 class="hendheading">groub of links</h6>
+                <ul class="hendnospace hendlinklist">
+                    <li><a href="#">link 1</a></li>
+                    <li><a href="#">link 2</a></li>
+                    <li><a href="#">link 3</a></li>
+                    <li><a href="#">link 4</a></li>
+                    <li><a href="#">link 5</a></li>
+                </ul>
+            </div>
+            <div class="hendone_quarter">
+                <h6 class="hendheading">resive our emails? maybe ^_^</h6>
+                <p class="hendnospace hendbtmspace-15">
+                    fill the next form by ur name and email
+                </p>
+                <form method="post" action="#">
+                    <fieldset>
+                        <input class="hendbtmspace-15" type="text" value="" placeholder="Name" />
+                        <input class="hendbtmspace-15" type="text" value="" placeholder="Email" />
+                        <button type="submit" value="submit">Submit</button>
+                    </fieldset>
+                </form>
+            </div>
+        </footer>
+    </div>
+
+    <div class="hendwrapper hendrow5">
+        <div id="copyright" class="hendhoc hendclear">
+            <p class="hendfl_left">
+                Copyright &copy; 12-12-2020 - All Rights Reserved -
+                <a href="index.html">VIR</a>
+            </p>
+        </div>
+    </div>
+    <!--Footer is end -->
+    <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+    <!-- JAVASCRIPTS -->
+    <script src="../../JS/Hend/scripts/jquery.min.js"></script>
+    <script src="../../JS/Hend/scripts/jquery.backtotop.js"></script>
+    <script src="../../JS/Hend/scripts/jquery.mobilemenu.js"></script>
 </body>
+
 </html>
