@@ -6,39 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Company Profile</title>
     <link rel="stylesheet" href="../../CSS/Lyna_company_CSS/companyProfile.css" type="text/css" />
+    <link href="../../CSS/Hend/styles/layout.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 
-<body>
-    
-    <header class="header1">
-        <h1 id="company_name">Company Name</h1>
+<body class="company_body">
+    <!--Header Start -->
+    <!-- This is for nav -->
+    <div class="hendwrapper hendrow1">
+        <header id="header" class=" hendheader hendhoc hendclear">
+            <div id="logo" class="hendfl_left">
+                <h1><a href="../../index.html">VIR</a></h1>
+            </div>
+            <nav id="mainav" class="hendfl_right">
+                <ul class="hendclear">
+                    <li class="hendactive"><a href="../../index.html">Home</a></li>
+                    <li>
+                        <a class="henddrop" href="#">Pages</a>
+                        <ul>
+                            <li><a href="../Hadeel/job-details.html">job details</a></li>
+                            <li><a href="../Lyna_company_html/companyProfile.html">Company Profile</a></li>
+                            <li><a href="../Lyna_company_html/companyProfile_forPublic.html">Company Profile
+                                    public</a></li>
+                            <li><a href="../Lyna_company_html/applicantsList.html">applicats list</a></li>
+                            <li><a href="../Lyna_company_html/companyUpdateInfo.html">Company update info</a></li>
+                            <li><a href="../Ghydaa/tst.html">user Profile</a></li>
+                            <li><a href="../Hend/font-icons.html">Font Icons</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="henddrop" href="#">Dropdown</a>
+                        <ul>
+                            <li><a href="#">Level 2</a></li>
+                            <li>
+                                <a class="henddrop" href="#">Level 2 + Drop</a>
+                                <ul>
+                                    <li><a href="#">Level 3</a></li>
+                                    <li><a href="#">Level 3</a></li>
+                                    <li><a href="#">Level 3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Level 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../Hadeel/job-listing.html">JOB lists</a></li>
+                    <li><a href="../Lyna_company_html/companyLists.html">Companies</a></li>
+                    <li><a href="../Ghydaa/userCard.html">freelancers</a></li>
+                    <li>
+                        <a href="Login_up/log.html" title="Login"><i class="fas fa-sign-in-alt"></i></a>
+                    </li>
+                    <li>
+                        <a href="Login_up/signup.html" title="Sign Up"><i class="fas fa-edit"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <!-- This is for nav -->
+    <!--Header End -->
+    <header class="companyHeader">
+        <h1 id="company_name company_h">Company Name</h1>
     </header>
     <!-- content area -->
     <section>
         <div>
-            <h2 class="breif_description">Company Name</h2>
-            <p class="breif_description">Lorem Ipsum is simply dummy text . Lorem Ipsum has been the industrLorem Ipsum
+            <h2 class="breif_description company_h">Company Name</h2>
+            <p class="breif_description company_p">Lorem Ipsum is simply dummy text . Lorem Ipsum has been the
+                industrLorem Ipsum
                 is simply dummy text of the printing and typesetting industry. </p>
         </div>
         <div class="flex-container1">
             <!--left sideabr-->
             <div class="flex-item1" style="  background-color: #5a6268;">
-                <h4>Manage Account</h4>
-                <ul class="sidenav">
-                    <li><a href="../../html/Lyna_company_html/companyProfile.html">Our Job
+                <h4 class="company_h4 company_h">Manage Account</h4>
+                <ul class="sidenav company_ul">
+                    <li><a class="company_a" href="../../html/Lyna_company_html/companyProfile.html">Our Job
                             Posts&nbsp;&nbsp;&nbsp;&nbsp;<strong style="color: lightpink;"><i>HOME</i></strong></a></li>
-                    <li><a href="../../html/Lyna_company_html/companyProfile_forPublic.html" target="_blank">Our Page
+                    <li><a class="company_a" href="../../html/Lyna_company_html/companyProfile_forPublic.html"
+                            target="_blank">Our Page
                             Publication</a></li>
-                    <li><a class="Update_Info_Nav" href="../../html/Lyna_company_html/companyUpdateInfo.html"
+                    <li><a class="Update_Info_Nav company_a" href="../../html/Lyna_company_html/companyUpdateInfo.html"
                             target="_blank">Update our Info</a></li>
-                    <li><a href="">Change Password</a></li>
-                    <li><a href="">Sing Out</a></li>
+                    <li><a class="company_a" href="">Change Password</a></li>
+                    <li><a class="company_a" href="">Sing Out</a></li>
                 </ul>
             </div>
 
             <!--Company posts-->
             <div class="flex-item2 flex-container2">
-                <h4 id="NavChoice"><strong>Our Job Posts</strong></h4>
+                <h4 id="NavChoice company_h4 company_h"><strong>Our Job Posts</strong></h4>
                 <div id="posts">
                     <!--job post-->
                     <div class="container">
@@ -47,22 +102,24 @@
                                 <div class="flex-container4">
                                     <div class="flex-container3">
                                         <img class="icon" src="../../images/Lyna_company_images/jobsearch_87661.png">
-                                        <h4 class="card-title description">Opportunity Name</h4>
+                                        <h4 class="card-title description company_h4 company_h">Opportunity Name</h4>
                                     </div>
-                                    <ul class="job-info">
+                                    <ul class="job-info company_ul">
                                         <li><strong>Category:</strong><span class="description">Designer</span></li>
                                         <li><strong>Deadline:</strong><span class="description">25th January 2018</span>
                                         </li>
                                         <li><strong>Location:</strong><span class="description">NewYork</span></li>
                                     </ul>
                                 </div>
-                                <p class="card-text description">Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                <p class="card-text description company_p">Nullam id dolor id nibh ultricies vehicula ut
+                                    id elit.
                                     Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
                                     porta gravida at eget metus.</p>
                                 <!--MANAGE POST DETAILS-->
                                 <div id="more-1" class="fulltext" hidden="true">
-                                    <h5><strong>Job Description</strong></h5>
-                                    <p class="description">Lorem Ipsum is simply dummy text of the printing and
+                                    <h5 class="company_h"><strong>Job Description</strong></h5>
+                                    <p class="description company_p">Lorem Ipsum is simply dummy text of the printing
+                                        and
                                         typesetting industry. Lorem Ipsum has been the industry's standard dummy text
                                         ever since the 1500s, when an unknown printer took a galley of type and
                                         scrambled it to make a type specimen book. It has survived not only five
@@ -70,16 +127,17 @@
                                         unchanged. It was popularised in the 1960s with the release of Letraset sheets
                                         containing Lorem Ipsum passages, and more recently with desktop publishing
                                         software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                    <h5><strong>How to Apply</strong></h5>
-                                    <p class="description">Lorem Ipsum is simply dummy text of the printing and
+                                    <h5 class="company_h"><strong>How to Apply</strong></h5>
+                                    <p class="description company_p">Lorem Ipsum is simply dummy text of the printing
+                                        and
                                         typesetting industry. Lorem Ipsum has been the industry's standard dummy text
                                         ever since the 1500s, when an unknown printer took a galley of type and
                                         scrambled it to make a type specimen book. It has survived not only five
                                         centuries, but also the leap into electronic typesetting, remaining essentially
                                         unchanged. It was popularised in the 1960s with the release of Letraset sheets
                                         containing Lorem Ipsum passages.</p>
-                                    <h5><strong>Job Requirements</strong></h5>
-                                    <ul class="JobRequirements">
+                                    <h5 class="company_h"><strong>Job Requirements</strong></h5>
+                                    <ul class="JobRequirements company_ul">
                                         <li class="description">The DexignLab Privacy Policy was updated on 25 June
                                             2018.</li>
                                         <li class="description">Who We Are and What This Policy Covers</li>
@@ -89,18 +147,18 @@
                                             ever since the 1500s,</li>
                                         <li class="description">DexignLab standard dummy text ever since</li>
                                     </ul>
-                                    <h5><strong>Salary Offer /</strong></h5>
-                                    <p class="description">$10.000 ~ $20.000</p>
-                                    <h5><strong>Experience Level /</strong></h5>
-                                    <p class="description">Senior</p>
-                                    <h5><strong>Total Years Experience /</strong></h5>
-                                    <p class="description">5-10</p>
-                                    <h5><strong>Academic Degree /</strong></h5>
-                                    <p class="description">bachelor</p>
-                                    <h5><strong>Dress Code /</strong></h5>
-                                    <p class="description">Casual</p>
-                                    <h5><strong>Working Hours /</strong></h5>
-                                    <p class="description">8 hours/day<br>5 days/week</p>
+                                    <h5 class="company_h"><strong>Salary Offer /</strong></h5>
+                                    <p class="description company_p">$10.000 ~ $20.000</p>
+                                    <h5 class="company_h"><strong>Experience Level /</strong></h5>
+                                    <p class="description company_p">Senior</p>
+                                    <h5 class="company_h"><strong>Total Years Experience /</strong></h5>
+                                    <p class="description company_p">5-10</p>
+                                    <h5 class="company_h"><strong>Academic Degree /</strong></h5>
+                                    <p class="description company_p">bachelor</p>
+                                    <h5 class="company_h"><strong>Dress Code /</strong></h5>
+                                    <p class="description company_p">Casual</p>
+                                    <h5 class="company_h"><strong>Working Hours /</strong></h5>
+                                    <p class="description company_p">8 hours/day<br>5 days/week</p>
 
                                 </div>
                                 <button aria-expanded="false" aria-controls="more-1" class="toggle-content btn" hidden>
@@ -110,7 +168,7 @@
                                 <button class="btn btn-secondary" type="button">Delete</button>
                                 <button class="btn btn-secondary editBtn" type="button">Edit</button>
                                 <button class="btn btn-secondary saveButt" type="button">Save Changes</button>
-                                <button class="btn btn-info btn-block viewApplicants" type="button"><a
+                                <button class="btn btn-info btn-block viewApplicants" type="button"><a class="company_a"
                                         href="../../html/Lyna_company_html/applicantsList.html" target="_blank">View
                                         Applicants</a>&nbsp;</button>
                             </div>
@@ -124,22 +182,24 @@
                                 <div class="flex-container4">
                                     <div class="flex-container3">
                                         <img class="icon" src="../../images/Lyna_company_images/jobsearch_87661.png">
-                                        <h4 class="card-title description">Opportunity Name</h4>
+                                        <h4 class="card-title description company_h4 company_h">Opportunity Name</h4>
                                     </div>
-                                    <ul class="job-info">
+                                    <ul class="job-info company_ul">
                                         <li><strong>Category:</strong><span class="description">Designer</span></li>
                                         <li><strong>Deadline:</strong><span class="description">25th January 2018</span>
                                         </li>
                                         <li><strong>Location:</strong><span class="description">NewYork</span></li>
                                     </ul>
                                 </div>
-                                <p class="card-text description">Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                <p class="card-text description company_p">Nullam id dolor id nibh ultricies vehicula ut
+                                    id elit.
                                     Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
                                     porta gravida at eget metus.</p>
                                 <!--MANAGE POST DETAILS-->
                                 <div id="more-2" class="fulltext" hidden="true">
-                                    <h5><strong>Job Description</strong></h5>
-                                    <p class="description">Lorem Ipsum is simply dummy text of the printing and
+                                    <h5 class="company_h"><strong>Job Description</strong></h5>
+                                    <p class="description company_p">Lorem Ipsum is simply dummy text of the printing
+                                        and
                                         typesetting industry. Lorem Ipsum has been the industry's standard dummy text
                                         ever since the 1500s, when an unknown printer took a galley of type and
                                         scrambled it to make a type specimen book. It has survived not only five
@@ -147,16 +207,17 @@
                                         unchanged. It was popularised in the 1960s with the release of Letraset sheets
                                         containing Lorem Ipsum passages, and more recently with desktop publishing
                                         software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                    <h5><strong>How to Apply</strong></h5>
-                                    <p class="description">Lorem Ipsum is simply dummy text of the printing and
+                                    <h5 class="company_h"><strong>How to Apply</strong></h5>
+                                    <p class="description company_p">Lorem Ipsum is simply dummy text of the printing
+                                        and
                                         typesetting industry. Lorem Ipsum has been the industry's standard dummy text
                                         ever since the 1500s, when an unknown printer took a galley of type and
                                         scrambled it to make a type specimen book. It has survived not only five
                                         centuries, but also the leap into electronic typesetting, remaining essentially
                                         unchanged. It was popularised in the 1960s with the release of Letraset sheets
                                         containing Lorem Ipsum passages.</p>
-                                    <h5><strong>Job Requirements</strong></h5>
-                                    <ul class="JobRequirements">
+                                    <h5 class="company_h"><strong>Job Requirements</strong></h5>
+                                    <ul class="JobRequirements company_ul">
                                         <li class="description">The DexignLab Privacy Policy was updated on 25 June
                                             2018.</li>
                                         <li class="description">Who We Are and What This Policy Covers</li>
@@ -166,18 +227,18 @@
                                             ever since the 1500s,</li>
                                         <li class="description">DexignLab standard dummy text ever since</li>
                                     </ul>
-                                    <h5><strong>Salary Offer /</strong></h5>
-                                    <p class="description">$10.000 ~ $20.000</p>
-                                    <h5><strong>Experience Level /</strong></h5>
-                                    <p class="description">Senior</p>
-                                    <h5><strong>Total Years Experience /</strong></h5>
-                                    <p class="description">5-10</p>
-                                    <h5><strong>Academic Degree /</strong></h5>
-                                    <p class="description">bachelor</p>
-                                    <h5><strong>Dress Code /</strong></h5>
-                                    <p class="description">Casual</p>
-                                    <h5><strong>Working Hours /</strong></h5>
-                                    <p class="description">8 hours/day<br>5 days/week</p>
+                                    <h5 class="company_h"><strong>Salary Offer /</strong></h5>
+                                    <p class="description company_p">$10.000 ~ $20.000</p>
+                                    <h5 class="company_h"><strong>Experience Level /</strong></h5>
+                                    <p class="description company_p">Senior</p>
+                                    <h5 class="company_h"><strong>Total Years Experience /</strong></h5>
+                                    <p class="description company_p">5-10</p>
+                                    <h5 class="company_h"><strong>Academic Degree /</strong></h5>
+                                    <p class="description company_p">bachelor</p>
+                                    <h5 class="company_h"><strong>Dress Code /</strong></h5>
+                                    <p class="description company_p">Casual</p>
+                                    <h5 class="company_h"><strong>Working Hours /</strong></h5>
+                                    <p class="description company_p">8 hours/day<br>5 days/week</p>
 
                                 </div>
                                 <button aria-expanded="false" aria-controls="more-2" class="toggle-content btn" hidden>
@@ -187,7 +248,7 @@
                                 <button class="btn btn-secondary" type="button">Delete</button>
                                 <button class="btn btn-secondary editBtn" type="button">Edit</button>
                                 <button class="btn btn-secondary saveButt" type="button">Save Changes</button>
-                                <button class="btn btn-info btn-block viewApplicants" type="button"><a
+                                <button class="btn btn-info btn-block viewApplicants" type="button"><a class="company_a"
                                         href="../../html/Lyna_company_html/applicantsList.html" target="_blank">View
                                         Applicants</a>&nbsp;</button>
                             </div>
@@ -202,22 +263,24 @@
                                 <div class="flex-container4">
                                     <div class="flex-container3">
                                         <img class="icon" src="../../images/Lyna_company_images/jobsearch_87661.png">
-                                        <h4 class="card-title description">Opportunity Name</h4>
+                                        <h4 class="card-title description company_h4 company_h">Opportunity Name</h4>
                                     </div>
-                                    <ul class="job-info">
+                                    <ul class="job-info company_ul">
                                         <li><strong>Category:</strong><span class="description">Designer</span></li>
                                         <li><strong>Deadline:</strong><span class="description">25th January 2018</span>
                                         </li>
                                         <li><strong>Location:</strong><span class="description">NewYork</span></li>
                                     </ul>
                                 </div>
-                                <p class="card-text description">Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                <p class="card-text description company_p">Nullam id dolor id nibh ultricies vehicula ut
+                                    id elit.
                                     Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
                                     porta gravida at eget metus.</p>
                                 <!--MANAGE POST DETAILS-->
                                 <div id="more-3" class="fulltext" hidden="true">
-                                    <h5><strong>Job Description</strong></h5>
-                                    <p class="description">Lorem Ipsum is simply dummy text of the printing and
+                                    <h5 class="company_h"><strong>Job Description</strong></h5>
+                                    <p class="description company_p">Lorem Ipsum is simply dummy text of the printing
+                                        and
                                         typesetting industry. Lorem Ipsum has been the industry's standard dummy text
                                         ever since the 1500s, when an unknown printer took a galley of type and
                                         scrambled it to make a type specimen book. It has survived not only five
@@ -225,16 +288,17 @@
                                         unchanged. It was popularised in the 1960s with the release of Letraset sheets
                                         containing Lorem Ipsum passages, and more recently with desktop publishing
                                         software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                    <h5><strong>How to Apply</strong></h5>
-                                    <p class="description">Lorem Ipsum is simply dummy text of the printing and
+                                    <h5 class="company_h"><strong>How to Apply</strong></h5>
+                                    <p class="description company_p">Lorem Ipsum is simply dummy text of the printing
+                                        and
                                         typesetting industry. Lorem Ipsum has been the industry's standard dummy text
                                         ever since the 1500s, when an unknown printer took a galley of type and
                                         scrambled it to make a type specimen book. It has survived not only five
                                         centuries, but also the leap into electronic typesetting, remaining essentially
                                         unchanged. It was popularised in the 1960s with the release of Letraset sheets
                                         containing Lorem Ipsum passages.</p>
-                                    <h5><strong>Job Requirements</strong></h5>
-                                    <ul class="JobRequirements">
+                                    <h5 class="company_h"><strong>Job Requirements</strong></h5>
+                                    <ul class="JobRequirements company_ul">
                                         <li class="description">The DexignLab Privacy Policy was updated on 25 June
                                             2018.</li>
                                         <li class="description">Who We Are and What This Policy Covers</li>
@@ -244,18 +308,18 @@
                                             ever since the 1500s,</li>
                                         <li class="description">DexignLab standard dummy text ever since</li>
                                     </ul>
-                                    <h5><strong>Salary Offer /</strong></h5>
-                                    <p class="description">$10.000 ~ $20.000</p>
-                                    <h5><strong>Experience Level /</strong></h5>
-                                    <p class="description">Senior</p>
-                                    <h5><strong>Total Years Experience /</strong></h5>
-                                    <p class="description">5-10</p>
-                                    <h5><strong>Academic Degree /</strong></h5>
-                                    <p class="description">bachelor</p>
-                                    <h5><strong>Dress Code /</strong></h5>
-                                    <p class="description">Casual</p>
-                                    <h5><strong>Working Hours /</strong></h5>
-                                    <p class="description">8 hours/day<br>5 days/week</p>
+                                    <h5 class="company_h"><strong>Salary Offer /</strong></h5>
+                                    <p class="description company_p">$10.000 ~ $20.000</p>
+                                    <h5 class="company_h"><strong>Experience Level /</strong></h5>
+                                    <p class="description company_p">Senior</p>
+                                    <h5 class="company_h"><strong>Total Years Experience /</strong></h5>
+                                    <p class="description company_p">5-10</p>
+                                    <h5 class="company_h"><strong>Academic Degree /</strong></h5>
+                                    <p class="description company_p">bachelor</p>
+                                    <h5 class="company_h"><strong>Dress Code /</strong></h5>
+                                    <p class="description company_p">Casual</p>
+                                    <h5 class="company_h"><strong>Working Hours /</strong></h5>
+                                    <p class="description company_p">8 hours/day<br>5 days/week</p>
 
                                 </div>
                                 <button aria-expanded="false" aria-controls="more-3" class="toggle-content btn" hidden>
@@ -265,7 +329,7 @@
                                 <button class="btn btn-secondary" type="button">Delete</button>
                                 <button class="btn btn-secondary editBtn" type="button">Edit</button>
                                 <button class="btn btn-secondary saveButt" type="button">Save Changes</button>
-                                <button class="btn btn-info btn-block viewApplicants" type="button"><a
+                                <button class="btn btn-info btn-block viewApplicants" type="button"><a class="company_a"
                                         href="../../html/Lyna_company_html/applicantsList.html" target="_blank">View
                                         Applicants</a>&nbsp;</button>
                             </div>
@@ -280,22 +344,24 @@
                                 <div class="flex-container4">
                                     <div class="flex-container3">
                                         <img class="icon" src="../../images/Lyna_company_images/jobsearch_87661.png">
-                                        <h4 class="card-title description">Opportunity Name</h4>
+                                        <h4 class="card-title description company_h4 company_h">Opportunity Name</h4>
                                     </div>
-                                    <ul class="job-info">
+                                    <ul class="job-info company_ul">
                                         <li><strong>Category:</strong><span class="description">Designer</span></li>
                                         <li><strong>Deadline:</strong><span class="description">25th January 2018</span>
                                         </li>
                                         <li><strong>Location:</strong><span class="description">NewYork</span></li>
                                     </ul>
                                 </div>
-                                <p class="card-text description">Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                <p class="card-text description company_p">Nullam id dolor id nibh ultricies vehicula ut
+                                    id elit.
                                     Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
                                     porta gravida at eget metus.</p>
                                 <!--MANAGE POST DETAILS-->
                                 <div id="more-4" class="fulltext" hidden="true">
-                                    <h5><strong>Job Description</strong></h5>
-                                    <p class="description">Lorem Ipsum is simply dummy text of the printing and
+                                    <h5 class="company_h"><strong>Job Description</strong></h5>
+                                    <p class="description company_p">Lorem Ipsum is simply dummy text of the printing
+                                        and
                                         typesetting industry. Lorem Ipsum has been the industry's standard dummy text
                                         ever since the 1500s, when an unknown printer took a galley of type and
                                         scrambled it to make a type specimen book. It has survived not only five
@@ -303,16 +369,17 @@
                                         unchanged. It was popularised in the 1960s with the release of Letraset sheets
                                         containing Lorem Ipsum passages, and more recently with desktop publishing
                                         software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                    <h5><strong>How to Apply</strong></h5>
-                                    <p class="description">Lorem Ipsum is simply dummy text of the printing and
+                                    <h5 class="company_h"><strong>How to Apply</strong></h5>
+                                    <p class="description company_p">Lorem Ipsum is simply dummy text of the printing
+                                        and
                                         typesetting industry. Lorem Ipsum has been the industry's standard dummy text
                                         ever since the 1500s, when an unknown printer took a galley of type and
                                         scrambled it to make a type specimen book. It has survived not only five
                                         centuries, but also the leap into electronic typesetting, remaining essentially
                                         unchanged. It was popularised in the 1960s with the release of Letraset sheets
                                         containing Lorem Ipsum passages.</p>
-                                    <h5><strong>Job Requirements</strong></h5>
-                                    <ul class="JobRequirements">
+                                    <h5 class="company_h"><strong>Job Requirements</strong></h5>
+                                    <ul class="JobRequirements company_ul">
                                         <li class="description">The DexignLab Privacy Policy was updated on 25 June
                                             2018.</li>
                                         <li class="description">Who We Are and What This Policy Covers</li>
@@ -322,18 +389,18 @@
                                             ever since the 1500s,</li>
                                         <li class="description">DexignLab standard dummy text ever since</li>
                                     </ul>
-                                    <h5><strong>Salary Offer /</strong></h5>
-                                    <p class="description">$10.000 ~ $20.000</p>
-                                    <h5><strong>Experience Level /</strong></h5>
-                                    <p class="description">Senior</p>
-                                    <h5><strong>Total Years Experience /</strong></h5>
-                                    <p class="description">5-10</p>
-                                    <h5><strong>Academic Degree /</strong></h5>
-                                    <p class="description">bachelor</p>
-                                    <h5><strong>Dress Code /</strong></h5>
-                                    <p class="description">Casual</p>
-                                    <h5><strong>Working Hours /</strong></h5>
-                                    <p class="description">8 hours/day<br>5 days/week</p>
+                                    <h5 class="company_h"><strong>Salary Offer /</strong></h5>
+                                    <p class="description company_p">$10.000 ~ $20.000</p>
+                                    <h5 class="company_h"><strong>Experience Level /</strong></h5>
+                                    <p class="description company_p">Senior</p>
+                                    <h5 class="company_h"><strong>Total Years Experience /</strong></h5>
+                                    <p class="description company_p">5-10</p>
+                                    <h5 class="company_h"><strong>Academic Degree /</strong></h5>
+                                    <p class="description company_p">bachelor</p>
+                                    <h5 class="company_h"><strong>Dress Code /</strong></h5>
+                                    <p class="description company_p">Casual</p>
+                                    <h5 class="company_h"><strong>Working Hours /</strong></h5>
+                                    <p class="description company_p">8 hours/day<br>5 days/week</p>
 
                                 </div>
                                 <button aria-expanded="false" aria-controls="more-4" class="toggle-content btn" hidden>
@@ -343,7 +410,7 @@
                                 <button class="btn btn-secondary" type="button">Delete</button>
                                 <button class="btn btn-secondary editBtn" type="button">Edit</button>
                                 <button class="btn btn-secondary saveButt" type="button">Save Changes</button>
-                                <button class="btn btn-info btn-block viewApplicants" type="button"><a
+                                <button class="btn btn-info btn-block viewApplicants" type="button"><a class="company_a"
                                         href="../../html/Lyna_company_html/applicantsList.html" target="_blank">View
                                         Applicants</a>&nbsp;</button>
                             </div>
@@ -358,22 +425,24 @@
                                 <div class="flex-container4">
                                     <div class="flex-container3">
                                         <img class="icon" src="../../images/Lyna_company_images/jobsearch_87661.png">
-                                        <h4 class="card-title description">Opportunity Name</h4>
+                                        <h4 class="card-title description company_h4 company_h">Opportunity Name</h4>
                                     </div>
-                                    <ul class="job-info">
+                                    <ul class="job-info company_ul">
                                         <li><strong>Category:</strong><span class="description">Designer</span></li>
                                         <li><strong>Deadline:</strong><span class="description">25th January 2018</span>
                                         </li>
                                         <li><strong>Location:</strong><span class="description">NewYork</span></li>
                                     </ul>
                                 </div>
-                                <p class="card-text description">Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                <p class="card-text description company_p">Nullam id dolor id nibh ultricies vehicula ut
+                                    id elit.
                                     Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
                                     porta gravida at eget metus.</p>
                                 <!--MANAGE POST DETAILS-->
                                 <div id="more-5" class="fulltext" hidden="true">
-                                    <h5><strong>Job Description</strong></h5>
-                                    <p class="description">Lorem Ipsum is simply dummy text of the printing and
+                                    <h5 class="company_h"><strong>Job Description</strong></h5>
+                                    <p class="description company_p">Lorem Ipsum is simply dummy text of the printing
+                                        and
                                         typesetting industry. Lorem Ipsum has been the industry's standard dummy text
                                         ever since the 1500s, when an unknown printer took a galley of type and
                                         scrambled it to make a type specimen book. It has survived not only five
@@ -381,16 +450,17 @@
                                         unchanged. It was popularised in the 1960s with the release of Letraset sheets
                                         containing Lorem Ipsum passages, and more recently with desktop publishing
                                         software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                    <h5><strong>How to Apply</strong></h5>
-                                    <p class="description">Lorem Ipsum is simply dummy text of the printing and
+                                    <h5 class="company_h"><strong>How to Apply</strong></h5>
+                                    <p class="description company_p">Lorem Ipsum is simply dummy text of the printing
+                                        and
                                         typesetting industry. Lorem Ipsum has been the industry's standard dummy text
                                         ever since the 1500s, when an unknown printer took a galley of type and
                                         scrambled it to make a type specimen book. It has survived not only five
                                         centuries, but also the leap into electronic typesetting, remaining essentially
                                         unchanged. It was popularised in the 1960s with the release of Letraset sheets
                                         containing Lorem Ipsum passages.</p>
-                                    <h5><strong>Job Requirements</strong></h5>
-                                    <ul class="JobRequirements">
+                                    <h5 class="company_h"><strong>Job Requirements</strong></h5>
+                                    <ul class="JobRequirements company_ul">
                                         <li class="description">The DexignLab Privacy Policy was updated on 25 June
                                             2018.</li>
                                         <li class="description">Who We Are and What This Policy Covers</li>
@@ -400,18 +470,18 @@
                                             ever since the 1500s,</li>
                                         <li class="description">DexignLab standard dummy text ever since</li>
                                     </ul>
-                                    <h5><strong>Salary Offer /</strong></h5>
-                                    <p class="description">$10.000 ~ $20.000</p>
-                                    <h5><strong>Experience Level /</strong></h5>
-                                    <p class="description">Senior</p>
-                                    <h5><strong>Total Years Experience /</strong></h5>
-                                    <p class="description">5-10</p>
-                                    <h5><strong>Academic Degree /</strong></h5>
-                                    <p class="description">bachelor</p>
-                                    <h5><strong>Dress Code /</strong></h5>
-                                    <p class="description">Casual</p>
-                                    <h5><strong>Working Hours /</strong></h5>
-                                    <p class="description">8 hours/day<br>5 days/week</p>
+                                    <h5 class="company_h"><strong>Salary Offer /</strong></h5>
+                                    <p class="description company_p">$10.000 ~ $20.000</p>
+                                    <h5 class="company_h"><strong>Experience Level /</strong></h5>
+                                    <p class="description company_p">Senior</p>
+                                    <h5 class="company_h"><strong>Total Years Experience /</strong></h5>
+                                    <p class="description company_p">5-10</p>
+                                    <h5 class="company_h"><strong>Academic Degree /</strong></h5>
+                                    <p class="description company_p">bachelor</p>
+                                    <h5 class="company_h"><strong>Dress Code /</strong></h5>
+                                    <p class="description company_p">Casual</p>
+                                    <h5 class="company_h"><strong>Working Hours /</strong></h5>
+                                    <p class="description company_p">8 hours/day<br>5 days/week</p>
 
                                 </div>
                                 <button aria-expanded="false" aria-controls="more-5" class="toggle-content btn" hidden>
@@ -421,7 +491,7 @@
                                 <button class="btn btn-secondary" type="button">Delete</button>
                                 <button class="btn btn-secondary editBtn" type="button">Edit</button>
                                 <button class="btn btn-secondary saveButt" type="button">Save Changes</button>
-                                <button class="btn btn-info btn-block viewApplicants" type="button"><a
+                                <button class="btn btn-info btn-block viewApplicants" type="button"><a class="company_a"
                                         href="../../html/Lyna_company_html/applicantsList.html" target="_blank">View
                                         Applicants</a>&nbsp;</button>
                             </div>
@@ -436,22 +506,24 @@
                                 <div class="flex-container4">
                                     <div class="flex-container3">
                                         <img class="icon" src="../../images/Lyna_company_images/jobsearch_87661.png">
-                                        <h4 class="card-title description">Opportunity Name</h4>
+                                        <h4 class="card-title description company_h4 company_h">Opportunity Name</h4>
                                     </div>
-                                    <ul class="job-info">
+                                    <ul class="job-info company_ul">
                                         <li><strong>Category:</strong><span class="description">Designer</span></li>
                                         <li><strong>Deadline:</strong><span class="description">25th January 2018</span>
                                         </li>
                                         <li><strong>Location:</strong><span class="description">NewYork</span></li>
                                     </ul>
                                 </div>
-                                <p class="card-text description">Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                <p class="card-text description company_p">Nullam id dolor id nibh ultricies vehicula ut
+                                    id elit.
                                     Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
                                     porta gravida at eget metus.</p>
                                 <!--MANAGE POST DETAILS-->
                                 <div id="more-6" class="fulltext" hidden="true">
-                                    <h5><strong>Job Description</strong></h5>
-                                    <p class="description">Lorem Ipsum is simply dummy text of the printing and
+                                    <h5 class="company_h"><strong>Job Description</strong></h5>
+                                    <p class="description company_p">Lorem Ipsum is simply dummy text of the printing
+                                        and
                                         typesetting industry. Lorem Ipsum has been the industry's standard dummy text
                                         ever since the 1500s, when an unknown printer took a galley of type and
                                         scrambled it to make a type specimen book. It has survived not only five
@@ -459,16 +531,17 @@
                                         unchanged. It was popularised in the 1960s with the release of Letraset sheets
                                         containing Lorem Ipsum passages, and more recently with desktop publishing
                                         software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                    <h5><strong>How to Apply</strong></h5>
-                                    <p class="description">Lorem Ipsum is simply dummy text of the printing and
+                                    <h5 class="company_h"><strong>How to Apply</strong></h5>
+                                    <p class="description company_p">Lorem Ipsum is simply dummy text of the printing
+                                        and
                                         typesetting industry. Lorem Ipsum has been the industry's standard dummy text
                                         ever since the 1500s, when an unknown printer took a galley of type and
                                         scrambled it to make a type specimen book. It has survived not only five
                                         centuries, but also the leap into electronic typesetting, remaining essentially
                                         unchanged. It was popularised in the 1960s with the release of Letraset sheets
                                         containing Lorem Ipsum passages.</p>
-                                    <h5><strong>Job Requirements</strong></h5>
-                                    <ul class="JobRequirements">
+                                    <h5 class="company_h"><strong>Job Requirements</strong></h5>
+                                    <ul class="JobRequirements company_ul">
                                         <li class="description">The DexignLab Privacy Policy was updated on 25 June
                                             2018.</li>
                                         <li class="description">Who We Are and What This Policy Covers</li>
@@ -478,18 +551,18 @@
                                             ever since the 1500s,</li>
                                         <li class="description">DexignLab standard dummy text ever since</li>
                                     </ul>
-                                    <h5><strong>Salary Offer /</strong></h5>
-                                    <p class="description">$10.000 ~ $20.000</p>
-                                    <h5><strong>Experience Level /</strong></h5>
-                                    <p class="description">Senior</p>
-                                    <h5><strong>Total Years Experience /</strong></h5>
-                                    <p class="description">5-10</p>
-                                    <h5><strong>Academic Degree /</strong></h5>
-                                    <p class="description">bachelor</p>
-                                    <h5><strong>Dress Code /</strong></h5>
-                                    <p class="description">Casual</p>
-                                    <h5><strong>Working Hours /</strong></h5>
-                                    <p class="description">8 hours/day<br>5 days/week</p>
+                                    <h5 class="company_h"><strong>Salary Offer /</strong></h5>
+                                    <p class="description company_p">$10.000 ~ $20.000</p>
+                                    <h5 class="company_h"><strong>Experience Level /</strong></h5>
+                                    <p class="description company_p">Senior</p>
+                                    <h5 class="company_h"><strong>Total Years Experience /</strong></h5>
+                                    <p class="description company_p">5-10</p>
+                                    <h5 class="company_h"><strong>Academic Degree /</strong></h5>
+                                    <p class="description company_p">bachelor</p>
+                                    <h5 class="company_h"><strong>Dress Code /</strong></h5>
+                                    <p class="description company_p">Casual</p>
+                                    <h5 class="company_h"><strong>Working Hours /</strong></h5>
+                                    <p class="description company_p">8 hours/day<br>5 days/week</p>
 
                                 </div>
                                 <button aria-expanded="false" aria-controls="more-6" class="toggle-content btn" hidden>
@@ -499,7 +572,7 @@
                                 <button class="btn btn-secondary" type="button">Delete</button>
                                 <button class="btn btn-secondary editBtn" type="button">Edit</button>
                                 <button class="btn btn-secondary saveButt" type="button">Save Changes</button>
-                                <button class="btn btn-info btn-block viewApplicants" type="button"><a
+                                <button class="btn btn-info btn-block viewApplicants" type="button"><a class="company_a"
                                         href="../../html/Lyna_company_html/applicantsList.html" target="_blank">View
                                         Applicants</a>&nbsp;</button>
                             </div>
@@ -514,22 +587,24 @@
                                 <div class="flex-container4">
                                     <div class="flex-container3">
                                         <img class="icon" src="../../images/Lyna_company_images/jobsearch_87661.png">
-                                        <h4 class="card-title description">Opportunity Name</h4>
+                                        <h4 class="card-title description company_h4 company_h">Opportunity Name</h4>
                                     </div>
-                                    <ul class="job-info">
+                                    <ul class="job-info company_ul">
                                         <li><strong>Category:</strong><span class="description">Designer</span></li>
                                         <li><strong>Deadline:</strong><span class="description">25th January 2018</span>
                                         </li>
                                         <li><strong>Location:</strong><span class="description">NewYork</span></li>
                                     </ul>
                                 </div>
-                                <p class="card-text description">Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                <p class="card-text description company_p">Nullam id dolor id nibh ultricies vehicula ut
+                                    id elit.
                                     Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
                                     porta gravida at eget metus.</p>
                                 <!--MANAGE POST DETAILS-->
                                 <div id="more-7" class="fulltext" hidden="true">
-                                    <h5><strong>Job Description</strong></h5>
-                                    <p class="description">Lorem Ipsum is simply dummy text of the printing and
+                                    <h5 class="company_h"><strong>Job Description</strong></h5>
+                                    <p class="description company_p">Lorem Ipsum is simply dummy text of the printing
+                                        and
                                         typesetting industry. Lorem Ipsum has been the industry's standard dummy text
                                         ever since the 1500s, when an unknown printer took a galley of type and
                                         scrambled it to make a type specimen book. It has survived not only five
@@ -537,16 +612,17 @@
                                         unchanged. It was popularised in the 1960s with the release of Letraset sheets
                                         containing Lorem Ipsum passages, and more recently with desktop publishing
                                         software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                    <h5><strong>How to Apply</strong></h5>
-                                    <p class="description">Lorem Ipsum is simply dummy text of the printing and
+                                    <h5 class="company_h"><strong>How to Apply</strong></h5>
+                                    <p class="description company_p">Lorem Ipsum is simply dummy text of the printing
+                                        and
                                         typesetting industry. Lorem Ipsum has been the industry's standard dummy text
                                         ever since the 1500s, when an unknown printer took a galley of type and
                                         scrambled it to make a type specimen book. It has survived not only five
                                         centuries, but also the leap into electronic typesetting, remaining essentially
                                         unchanged. It was popularised in the 1960s with the release of Letraset sheets
                                         containing Lorem Ipsum passages.</p>
-                                    <h5><strong>Job Requirements</strong></h5>
-                                    <ul class="JobRequirements">
+                                    <h5 class="company_h"><strong>Job Requirements</strong></h5>
+                                    <ul class="JobRequirements company_ul">
                                         <li class="description">The DexignLab Privacy Policy was updated on 25 June
                                             2018.</li>
                                         <li class="description">Who We Are and What This Policy Covers</li>
@@ -556,18 +632,18 @@
                                             ever since the 1500s,</li>
                                         <li class="description">DexignLab standard dummy text ever since</li>
                                     </ul>
-                                    <h5><strong>Salary Offer /</strong></h5>
-                                    <p class="description">$10.000 ~ $20.000</p>
-                                    <h5><strong>Experience Level /</strong></h5>
-                                    <p class="description">Senior</p>
-                                    <h5><strong>Total Years Experience /</strong></h5>
-                                    <p class="description">5-10</p>
-                                    <h5><strong>Academic Degree /</strong></h5>
-                                    <p class="description">bachelor</p>
-                                    <h5><strong>Dress Code /</strong></h5>
-                                    <p class="description">Casual</p>
-                                    <h5><strong>Working Hours /</strong></h5>
-                                    <p class="description">8 hours/day<br>5 days/week</p>
+                                    <h5 class="company_h"><strong>Salary Offer /</strong></h5>
+                                    <p class="description company_p">$10.000 ~ $20.000</p>
+                                    <h5 class="company_h"><strong>Experience Level /</strong></h5>
+                                    <p class="description company_p">Senior</p>
+                                    <h5 class="company_h"><strong>Total Years Experience /</strong></h5>
+                                    <p class="description company_p">5-10</p>
+                                    <h5 class="company_h"><strong>Academic Degree /</strong></h5>
+                                    <p class="description company_p">bachelor</p>
+                                    <h5 class="company_h"><strong>Dress Code /</strong></h5>
+                                    <p class="description company_p">Casual</p>
+                                    <h5 class="company_h"><strong>Working Hours /</strong></h5>
+                                    <p class="description company_p">8 hours/day<br>5 days/week</p>
 
                                 </div>
                                 <button aria-expanded="false" aria-controls="more-7" class="toggle-content btn" hidden>
@@ -577,7 +653,7 @@
                                 <button class="btn btn-secondary" type="button">Delete</button>
                                 <button class="btn btn-secondary editBtn" type="button">Edit</button>
                                 <button class="btn btn-secondary saveButt" type="button">Save Changes</button>
-                                <button class="btn btn-info btn-block viewApplicants" type="button"><a
+                                <button class="btn btn-info btn-block viewApplicants" type="button"><a class="company_a"
                                         href="../../html/Lyna_company_html/applicantsList.html" target="_blank">View
                                         Applicants</a>&nbsp;</button>
                             </div>
@@ -592,22 +668,24 @@
                                 <div class="flex-container4">
                                     <div class="flex-container3">
                                         <img class="icon" src="../../images/Lyna_company_images/jobsearch_87661.png">
-                                        <h4 class="card-title description">Opportunity Name</h4>
+                                        <h4 class="card-title description company_h4 company_h">Opportunity Name</h4>
                                     </div>
-                                    <ul class="job-info">
+                                    <ul class="job-info company_ul">
                                         <li><strong>Category:</strong><span class="description">Designer</span></li>
                                         <li><strong>Deadline:</strong><span class="description">25th January 2018</span>
                                         </li>
                                         <li><strong>Location:</strong><span class="description">NewYork</span></li>
                                     </ul>
                                 </div>
-                                <p class="card-text description">Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                <p class="card-text description company_p">Nullam id dolor id nibh ultricies vehicula ut
+                                    id elit.
                                     Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
                                     porta gravida at eget metus.</p>
                                 <!--MANAGE POST DETAILS-->
                                 <div id="more-8" class="fulltext" hidden="true">
-                                    <h5><strong>Job Description</strong></h5>
-                                    <p class="description">Lorem Ipsum is simply dummy text of the printing and
+                                    <h5 class="company_h"><strong>Job Description</strong></h5>
+                                    <p class="description company_p">Lorem Ipsum is simply dummy text of the printing
+                                        and
                                         typesetting industry. Lorem Ipsum has been the industry's standard dummy text
                                         ever since the 1500s, when an unknown printer took a galley of type and
                                         scrambled it to make a type specimen book. It has survived not only five
@@ -615,16 +693,17 @@
                                         unchanged. It was popularised in the 1960s with the release of Letraset sheets
                                         containing Lorem Ipsum passages, and more recently with desktop publishing
                                         software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                    <h5><strong>How to Apply</strong></h5>
-                                    <p class="description">Lorem Ipsum is simply dummy text of the printing and
+                                    <h5 class="company_h"><strong>How to Apply</strong></h5>
+                                    <p class="description company_p">Lorem Ipsum is simply dummy text of the printing
+                                        and
                                         typesetting industry. Lorem Ipsum has been the industry's standard dummy text
                                         ever since the 1500s, when an unknown printer took a galley of type and
                                         scrambled it to make a type specimen book. It has survived not only five
                                         centuries, but also the leap into electronic typesetting, remaining essentially
                                         unchanged. It was popularised in the 1960s with the release of Letraset sheets
                                         containing Lorem Ipsum passages.</p>
-                                    <h5><strong>Job Requirements</strong></h5>
-                                    <ul class="JobRequirements">
+                                    <h5 class="company_h"><strong>Job Requirements</strong></h5>
+                                    <ul class="JobRequirements company_ul">
                                         <li class="description">The DexignLab Privacy Policy was updated on 25 June
                                             2018.</li>
                                         <li class="description">Who We Are and What This Policy Covers</li>
@@ -634,18 +713,18 @@
                                             ever since the 1500s,</li>
                                         <li class="description">DexignLab standard dummy text ever since</li>
                                     </ul>
-                                    <h5><strong>Salary Offer /</strong></h5>
-                                    <p class="description">$10.000 ~ $20.000</p>
-                                    <h5><strong>Experience Level /</strong></h5>
-                                    <p class="description">Senior</p>
-                                    <h5><strong>Total Years Experience /</strong></h5>
-                                    <p class="description">5-10</p>
-                                    <h5><strong>Academic Degree /</strong></h5>
-                                    <p class="description">bachelor</p>
-                                    <h5><strong>Dress Code /</strong></h5>
-                                    <p class="description">Casual</p>
-                                    <h5><strong>Working Hours /</strong></h5>
-                                    <p class="description">8 hours/day<br>5 days/week</p>
+                                    <h5 class="company_h"><strong>Salary Offer /</strong></h5>
+                                    <p class="description company_p">$10.000 ~ $20.000</p>
+                                    <h5 class="company_h"><strong>Experience Level /</strong></h5>
+                                    <p class="description company_p">Senior</p>
+                                    <h5 class="company_h"><strong>Total Years Experience /</strong></h5>
+                                    <p class="description company_p">5-10</p>
+                                    <h5 class="company_h"><strong>Academic Degree /</strong></h5>
+                                    <p class="description company_p">bachelor</p>
+                                    <h5 class="company_h"><strong>Dress Code /</strong></h5>
+                                    <p class="description company_p">Casual</p>
+                                    <h5 class="company_h"><strong>Working Hours /</strong></h5>
+                                    <p class="description company_p">8 hours/day<br>5 days/week</p>
 
                                 </div>
                                 <button aria-expanded="false" aria-controls="more-8" class="toggle-content btn" hidden>
@@ -655,7 +734,7 @@
                                 <button class="btn btn-secondary" type="button">Delete</button>
                                 <button class="btn btn-secondary editBtn" type="button">Edit</button>
                                 <button class="btn btn-secondary saveButt" type="button">Save Changes</button>
-                                <button class="btn btn-info btn-block viewApplicants" type="button"><a
+                                <button class="btn btn-info btn-block viewApplicants" type="button"><a class="company_a"
                                         href="../../html/Lyna_company_html/applicantsList.html" target="_blank">View
                                         Applicants</a>&nbsp;</button>
                             </div>
@@ -667,8 +746,98 @@
             </div>
         </div>
     </section>
-    <footer></footer>
+    <footer class="companyFooter"></footer>
+    <!--Footer is Start -->
+    <div class="hendwrapper hendrow4">
+        <footer id="footer" class="hendhoc hendclear">
+            <div class="hendone_quarter hendfirst">
+                <h6 class="hendheading">about VIR</h6>
+                <p>
+                    Luctus et dolor nulla facilisi fusce sit amet magna non odio
+                    molestie egestas nullam id odio.
+                </p>
+                <p class="hendbtmspace-30">
+                    Quis risus placerat aliquam nunc nec nunc morbi vel nisi sit amet
+                    orci adipiscing pharetra [<a href="#">more <i class="fas fa-arrow-right"></i></a>]
+                </p>
+                <ul class="hendfaico clear">
+                    <li>
+                        <a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a>
+                    </li>
+                    <li>
+                        <a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hendone_quarter">
+                <h6 class="hendheading">Contact us</h6>
+                <ul class="hendnospace hendlinklist">
+                    <li>
+                        <div class="hendblock hendclear">
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                            <span><strong>Send us a mail:</strong><br />
+                                vir@vir.com</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hendblock hendclear">
+                            <a href="#"><i class="fas fa-phone"></i></a>
+                            <span><strong>Give us a call:</strong><br />
+                                +00 (123) 456 7890
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="hendone_quarter">
+                <h6 class="hendheading">groub of links</h6>
+                <ul class="hendnospace hendlinklist">
+                    <li><a href="#">link 1</a></li>
+                    <li><a href="#">link 2</a></li>
+                    <li><a href="#">link 3</a></li>
+                    <li><a href="#">link 4</a></li>
+                    <li><a href="#">link 5</a></li>
+                </ul>
+            </div>
+            <div class="hendone_quarter">
+                <h6 class="hendheading">resive our emails? maybe ^_^</h6>
+                <p class="hendnospace hendbtmspace-15">
+                    fill the next form by ur name and email
+                </p>
+                <form method="post" action="#">
+                    <fieldset>
+                        <input class="hendbtmspace-15" type="text" value="" placeholder="Name" />
+                        <input class="hendbtmspace-15" type="text" value="" placeholder="Email" />
+                        <button type="submit" value="submit">Submit</button>
+                    </fieldset>
+                </form>
+            </div>
+        </footer>
+    </div>
+
+    <div class="hendwrapper hendrow5">
+        <div id="copyright" class="hendhoc hendclear">
+            <p class="hendfl_left">
+                Copyright &copy; 12-12-2020 - All Rights Reserved -
+                <a href="index.html">VIR</a>
+            </p>
+        </div>
+    </div>
+    <!--Footer is end -->
+    <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+    <!-- JAVASCRIPTS -->
+    <script src="../../JS/Hend/scripts/jquery.min.js"></script>
+    <script src="../../JS/Hend/scripts/jquery.backtotop.js"></script>
+    <script src="../../JS/Hend/scripts/jquery.mobilemenu.js"></script>
     <script type="text/javascript" src="../../JS/Lyna_company_JS/companyProfile.js"></script>
+
+
 </body>
 
 </html>

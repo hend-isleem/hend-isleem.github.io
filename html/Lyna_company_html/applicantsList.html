@@ -8,68 +8,8 @@
 
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../../CSS/Lyna_company_CSS/listPage.css">
     <link rel="stylesheet" href="../../CSS/Lyna_company_CSS/companyProfile.css">
-    <style>
-        .flex-cont,
-        .response {
-            display: flex;
-        }
-
-        .response {
-            flex-direction: row;
-            justify-content: space-around;
-        }
-
-        img {
-            border-radius: 50%;
-            width: 10em;
-            height: 10em;
-        }
-
-        a {
-            color: black !important;
-        }
-
-        .accept {
-            background-color: rgb(233, 76, 55);
-        }
-
-        .reject {
-            background-color: rgb(39, 146, 39);
-        }
-
-        input[type=text],
-        select {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-
-        input[type=submit] {
-            width: 100%;
-            background-color: #4CAF50;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        input[type=submit]:hover {
-            background-color: #45a049;
-        }
-
-        div {
-            border-radius: 5px;
-            background-color: #f2f2f2;
-            padding: 20px;
-        }
-    </style>
     <link href="../../CSS/Hend/styles/layout.css" rel="stylesheet" type="text/css" media="all" />
 
 </head>
@@ -128,16 +68,16 @@
     </div>
     <!-- This is for nav -->
     <!--Header End -->
-    <div class="flex-cont">
+    <div class="flex-cont company_div">
         <img class="icon" src="../../images/Lyna_company_images/jobsearch_87661.png">
         <h1>Opportunity Name</h1>
     </div>
 
-    <div class="flex-container1">
+    <div class="flex-container1 company_div">
         <!--Details/application-->
-        <div class="flex-item1">
+        <div class="flex-item1 company_div">
             <h3>Details</h3>
-            <div>
+            <div class="company_div">
                 <form action="">
                     <label for="">Application time</label>
                     <input type="text" value="1/1/2010">
@@ -151,9 +91,11 @@
             </div>
         </div>
         <!--End Details/application-->
-        <div class="resumes flex-item2" id="posts">
-            <h4 id="NavChoice"><strong>Applicants List</strong></h4>
-            <div>
+        <div class="resumes flex-item2 company_div" id="posts">
+            <div class="NavChoice">
+                <h4><strong>Applicants List</strong></h4>
+            </div>
+            <div class="company_div">
                 <table class="w3-table-all w3-card-4">
                     <thead>
                         <tr>
@@ -167,22 +109,22 @@
                         <!--table raw-->
                         <tr>
                             <td>
-                                <div black class="flex-cont">
-                                    <div>
-                                        <a href="#">
+                                <div black class="flex-cont company_div">
+                                    <div class="company_div">
+                                        <a class="company_a" href="#">
                                             <img alt="" src="../../images/Lyna_company_images/person1.jpg" class="photo"
                                                 height="40" width="40">
                                         </a>
                                     </div>
-                                    <div>
+                                    <div class="company_div">
                                         <h2>
-                                            <a href="">Suresh Patel</a>
+                                            <a class="company_a" href="">Suresh Patel</a>
                                         </h2>
                                     </div>
                                 </div>
                             </td>
                             <td>
-                                <a href="#"><strong>Web Developer</strong></a>
+                                <a class="company_a" href="#"><strong>Web Developer</strong></a>
                             </td>
                             <td>
                                 <i></i>&nbsp;<em>india</em>
@@ -192,22 +134,22 @@
                         <!--table raw-->
                         <tr>
                             <td>
-                                <div black class="flex-cont">
-                                    <div>
-                                        <a href="#">
+                                <div black class="flex-cont company_div">
+                                    <div class="company_div">
+                                        <a class="company_a" href="#">
                                             <img alt="" src="../../images/Lyna_company_images/person2.jpg" class="photo"
                                                 height="40" width="40">
                                         </a>
                                     </div>
-                                    <div>
+                                    <div class="company_div">
                                         <h2>
-                                            <a href="">Cammy</a>
+                                            <a class="company_a" href="">Cammy</a>
                                         </h2>
                                     </div>
                                 </div>
                             </td>
                             <td>
-                                <a href="#"><strong>Front Desk Specialist</strong></a>
+                                <a class="company_a" href="#"><strong>Front Desk Specialist</strong></a>
                             </td>
                             <td>
                                 <i></i>&nbsp;<em>Atlanta</em>
@@ -217,22 +159,22 @@
                         <!--table raw-->
                         <tr>
                             <td>
-                                <div black class="flex-cont">
-                                    <div>
-                                        <a href="#">
+                                <div black class="flex-cont company_div">
+                                    <div class="company_div">
+                                        <a class="company_a" href="#">
                                             <img alt="" src="../../images/Lyna_company_images/person3.jpg" class="photo"
                                                 height="40" width="40">
                                         </a>
                                     </div>
-                                    <div>
+                                    <div class="company_div">
                                         <h2>
-                                            <a href="">Bettymesfin</a>
+                                            <a class="company_a" href="">Bettymesfin</a>
                                         </h2>
                                     </div>
                                 </div>
                             </td>
                             <td>
-                                <a href="#"><strong>Web Developer</strong></a>
+                                <a class="company_a" href="#"><strong>Web Developer</strong></a>
                             </td>
                             <td>
                                 <i></i>&nbsp;<em>Atlanta</em>
@@ -242,22 +184,22 @@
                         <!--table raw-->
                         <tr>
                             <td>
-                                <div black class="flex-cont">
-                                    <div>
-                                        <a href="#">
+                                <div black class="flex-cont company_div">
+                                    <div class="company_div">
+                                        <a class="company_a" href="#">
                                             <img alt="" src="../../images/Lyna_company_images/person4.jpg" class="photo"
                                                 height="40" width="40">
                                         </a>
                                     </div>
-                                    <div>
+                                    <div class="company_div">
                                         <h2>
-                                            <a href="">Jane Doe</a>
+                                            <a class="company_a" href="">Jane Doe</a>
                                         </h2>
                                     </div>
                                 </div>
                             </td>
                             <td>
-                                <a href="#"><strong>Marketing Online</strong></a>
+                                <a class="company_a" href="#"><strong>Marketing Online</strong></a>
                             </td>
                             <td>
                                 <i></i>&nbsp;<em>Berlin</em>
@@ -274,6 +216,7 @@
     <div><button class="btn back btn-secondary ">Back</button></div>  
 </div>
 -->
+
     <!-- footer is start :) -->
     <div class="hendwrapper hendrow4">
         <footer id="footer" class="hendhoc hendclear">
