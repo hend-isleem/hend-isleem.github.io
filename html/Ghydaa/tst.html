@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <title>user profile</title>
   <link rel="stylesheet" href="../../CSS/ghydaa/styles.css">
+  <link href="../../CSS/Hend/styles/layout.css" rel="stylesheet" type="text/css" media="all" />
+
 
   <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -34,7 +36,59 @@
 </head>
 
 <body>
-
+  <!--Header Start -->
+  <!-- This is for nav -->
+  <div class="hendwrapper hendrow1">
+    <header id="header" class=" hendheader hendhoc hendclear">
+      <div id="logo" class="hendfl_left">
+        <h1><a href="../../index.html">VIR</a></h1>
+      </div>
+      <nav id="mainav" class="hendfl_right">
+        <ul class="hendclear">
+          <li class="hendactive"><a href="../../index.html">Home</a></li>
+          <li>
+            <a class="henddrop" href="#">Pages</a>
+            <ul>
+              <li><a href="../Hadeel/job-details.html">job details</a></li>
+              <li><a href="../Lyna_company_html/companyProfile.html">Company Profile</a></li>
+              <li><a href="../Lyna_company_html/companyProfile_forPublic.html">Company Profile
+                  public</a></li>
+              <li><a href="../Lyna_company_html/applicantsList.html">applicats list</a></li>
+              <li><a href="../Lyna_company_html/companyUpdateInfo.html">Company update info</a></li>
+              <li><a href="../Ghydaa/tst.html">user Profile</a></li>
+              <li><a href="../Hend/font-icons.html">Font Icons</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="henddrop" href="#">Dropdown</a>
+            <ul>
+              <li><a href="#">Level 2</a></li>
+              <li>
+                <a class="henddrop" href="#">Level 2 + Drop</a>
+                <ul>
+                  <li><a href="#">Level 3</a></li>
+                  <li><a href="#">Level 3</a></li>
+                  <li><a href="#">Level 3</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Level 2</a></li>
+            </ul>
+          </li>
+          <li><a href="../Hadeel/job-listing.html">JOB lists</a></li>
+          <li><a href="../Lyna_company_html/companyLists.html">Companies</a></li>
+          <li><a href="../Ghydaa/userCard.html">freelancers</a></li>
+          <li>
+            <a href="Login_up/log.html" title="Login"><i class="fas fa-sign-in-alt"></i></a>
+          </li>
+          <li>
+            <a href="Login_up/signup.html" title="Sign Up"><i class="fas fa-edit"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <!-- This is for nav -->
+  <!--Header End -->
   <div class="wrapper">
     <div class="navbar">
       <div class="navbar_left">
@@ -217,7 +271,8 @@
               <option value="1952">1952</option>
               <option value="1951">1951</option>
               <option value="1950">1950</option>
-            </select> </div>
+            </select>
+          </div>
         </div>
         <br>
         <div id="user-email">
@@ -460,7 +515,94 @@
 
   </div>
 
+  <!--Footer is Start -->
+  <div class="hendwrapper hendrow4">
+    <footer id="footer" class="hendhoc hendclear">
+      <div class="hendone_quarter hendfirst">
+        <h6 class="hendheading">about VIR</h6>
+        <p>
+          Luctus et dolor nulla facilisi fusce sit amet magna non odio
+          molestie egestas nullam id odio.
+        </p>
+        <p class="hendbtmspace-30">
+          Quis risus placerat aliquam nunc nec nunc morbi vel nisi sit amet
+          orci adipiscing pharetra [<a href="#">more <i class="fas fa-arrow-right"></i></a>]
+        </p>
+        <ul class="hendfaico clear">
+          <li>
+            <a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a>
+          </li>
+          <li>
+            <a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a>
+          </li>
+          <li>
+            <a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="hendone_quarter">
+        <h6 class="hendheading">Contact us</h6>
+        <ul class="hendnospace hendlinklist">
+          <li>
+            <div class="hendblock hendclear">
+              <a href="#"><i class="fas fa-envelope"></i></a>
+              <span><strong>Send us a mail:</strong><br />
+                vir@vir.com</span>
+            </div>
+          </li>
+          <li>
+            <div class="hendblock hendclear">
+              <a href="#"><i class="fas fa-phone"></i></a>
+              <span><strong>Give us a call:</strong><br />
+                +00 (123) 456 7890
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="hendone_quarter">
+        <h6 class="hendheading">groub of links</h6>
+        <ul class="hendnospace hendlinklist">
+          <li><a href="#">link 1</a></li>
+          <li><a href="#">link 2</a></li>
+          <li><a href="#">link 3</a></li>
+          <li><a href="#">link 4</a></li>
+          <li><a href="#">link 5</a></li>
+        </ul>
+      </div>
+      <div class="hendone_quarter">
+        <h6 class="hendheading">resive our emails? maybe ^_^</h6>
+        <p class="hendnospace hendbtmspace-15">
+          fill the next form by ur name and email
+        </p>
+        <form method="post" action="#">
+          <fieldset>
+            <input class="hendbtmspace-15" type="text" value="" placeholder="Name" />
+            <input class="hendbtmspace-15" type="text" value="" placeholder="Email" />
+            <button type="submit" value="submit">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+    </footer>
+  </div>
 
+  <div class="hendwrapper hendrow5">
+    <div id="copyright" class="hendhoc hendclear">
+      <p class="hendfl_left">
+        Copyright &copy; 12-12-2020 - All Rights Reserved -
+        <a href="index.html">VIR</a>
+      </p>
+    </div>
+  </div>
+  <!--Footer is end -->
+  <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+  <!-- JAVASCRIPTS -->
+  <script src="../../JS/Hend/scripts/jquery.min.js"></script>
+  <script src="../../JS/Hend/scripts/jquery.backtotop.js"></script>
+  <script src="../../JS/Hend/scripts/jquery.mobilemenu.js"></script>
 
 
 </body>

@@ -1,6 +1,6 @@
 @import url("fontawesome-free/css/all.min.css");
 
-.wrapper {
+.hendwrapper {
   display: block;
   position: relative;
   width: 100%;
@@ -9,7 +9,7 @@
   text-align: left;
   word-wrap: break-word;
 }
-.row1 {
+.hendrow1 {
   color: #ffffff;
   background-color: #53d3de;
   border-color: #1d8b94;
@@ -24,7 +24,7 @@
   font-size: 40px;
   text-transform: uppercase;
 }
-header {
+#header {
   display: block;
   margin: 0;
   padding: 0;
@@ -36,40 +36,41 @@ header {
   margin: 30px 0 0 0;
 }
 
-.hoc {
+.hendhoc {
   display: block;
   margin: 0 auto;
 }
 
-.clear,
-.group {
+.hendclear,
+.hendgroup {
   display: block;
 }
-.clear::before,
-.clear::after,
-.group::before,
-.group::after {
+
+.hendclear::before,
+.hendclear::after,
+.hendgroup::before,
+.hendgroup::after {
   display: table;
   content: "";
 }
-.clear,
-.clear::after,
-.group,
-.group::after {
+.hendclear,
+.hendclear::after,
+.hendgroup,
+.hendgroup::after {
   clear: both;
 }
 
-.fl_left,
-.fl_right {
+.hendfl_left,
+.hendfl_right {
   display: block;
   float: none;
 }
-.fl_left,
-.imgl {
+.hendfl_left,
+.hendimgl {
   float: left;
 }
-.fl_right,
-.imgr {
+.hendfl_right,
+.hendimgr {
   float: right;
 }
 #mainav .drop::after,
@@ -123,7 +124,7 @@ header {
   padding-left: 20px;
 }
 #mainav li li a,
-#mainav li li .drop {
+#mainav li li .henddrop {
   display: block;
   margin: 0;
   padding: 10px 15px;
@@ -198,32 +199,32 @@ header {
   color: #474747;
   background-color: #ffffff;
 }
-.row4 {
+.hendrow4 {
   color: #9fa7af;
   background-color: #202020;
 }
 #pageintro footer {
   margin-top: 50px;
 }
-.prices li article footer {
+.hendprices li article footer {
   margin: 0 0 -60px 0;
   padding: 0;
 }
-.prices li article footer a {
+.hendprices li article footer a {
   margin-bottom: 0;
 }
-.cta footer {
+.hendcta footer {
   text-align: center;
 }
-.cta footer a {
+.hendcta footer a {
   display: block;
 }
-#footer .heading {
+#footer .hendheading {
   color: #ffffff;
 }
 #footer hr,
-#footer .borderedbox,
-#footer .linklist li {
+#footer .hendborderedbox,
+#footer .hendlinklist li {
   border-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -242,7 +243,7 @@ header {
   color: #ffffff;
   background-color: #53d3de;
 }
-.cta footer a {
+.hendcta footer a {
   display: inline-block;
 }
 #footer {
@@ -257,29 +258,29 @@ footer {
   padding: 30px 0;
 }
 
-#footer .heading {
+#footer .hendheading {
   margin-bottom: 50px;
   font-size: 1.2rem;
 }
 
-#footer .linklist li {
+#footer .hendlinklist li {
   display: block;
   margin-bottom: 15px;
   padding: 0 0 15px 0;
   border-bottom: 1px solid;
 }
-#footer .linklist li:last-child {
+#footer .hendlinklist li:last-child {
   margin: 0;
   padding: 0;
   border: none;
 }
-#footer .linklist li::before,
-#footer .linklist li::after {
+#footer .hendlinklist li::before,
+#footer .hendlinklist li::after {
   display: table;
   content: "";
 }
-#footer .linklist li,
-#footer .linklist li::after {
+#footer .hendlinklist li,
+#footer .hendlinklist li::after {
   clear: both;
 }
 
@@ -298,51 +299,51 @@ footer {
   font-weight: 700;
   cursor: pointer;
 }
-#pageintro .heading {
+#pageintro .hendheading {
   margin-bottom: 20px;
   font-size: 4rem;
 }
-.prices li article .heading {
+.hendprices li article .hendheading {
   text-transform: uppercase;
 }
-#breadcrumb .heading {
+#breadcrumb .hendheading {
   margin: 0;
   font-size: 2rem;
 }
-#pageintro .heading {
+#pageintro .hendheading {
   font-size: 2rem;
 }
-.heading {
+.hendheading {
   margin: 0 0 20px 0;
   font-size: 22px;
   line-height: normal;
   font-weight: normal;
   text-transform: capitalize;
 }
-.heading.nospace {
+.hendheading.hendnospace {
   margin-bottom: 0;
 }
-.heading {
+.hendheading {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-.btmspace-30 {
+.hendbtmspace-30 {
   margin-bottom: 30px;
 }
-.faico {
+.hendfaico {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.faico li {
+.hendfaico li {
   display: inline-block;
   margin: 8px 5px 0 0;
   padding: 0;
   line-height: normal;
 }
-.faico li:last-child {
+.hendfaico li:last-child {
   margin-right: 0;
 }
-.faico a {
+.hendfaico a {
   display: inline-block;
   width: 36px;
   height: 36px;
@@ -351,33 +352,33 @@ footer {
   text-align: center;
 }
 
-.faico a {
+.hendfaico a {
   color: #ffffff;
   background-color: #161616;
 }
-.faicon-dribble:hover {
+.hendfaicon-dribble:hover {
   background-color: #ea4c89;
 }
-.faicon-facebook:hover {
+.hendfaicon-facebook:hover {
   background-color: #3b5998;
 }
-.faicon-google-plus:hover {
+.hendfaicon-google-plus:hover {
   background-color: #db4a39;
 }
-.faicon-linkedin:hover {
+.hendfaicon-linkedin:hover {
   background-color: #0e76a8;
 }
-.faicon-twitter:hover {
+.hendfaicon-twitter:hover {
   background-color: #00acee;
 }
-.faicon-vk:hover {
+.hendfaicon-vk:hover {
   background-color: #4e658e;
 }
-.block {
+.hendblock {
   display: block;
 }
-.row5,
-.row5 a {
+.hendrow5,
+.hendrow5 a {
   color: #9fa7af;
   background-color: #161616;
 }
@@ -410,20 +411,20 @@ footer {
 }
 
 @media screen and (min-width: 1140px) {
-  .hoc {
+  .hendhoc {
     max-width: 1140px;
   }
 }
 
 @media screen and (min-width: 978px) and (max-width: 1140px) {
-  .hoc {
+  .hendhoc {
     max-width: 95%;
   }
 }
 
 /* Mobile Devices ---------------------------------------------------------------- */
 @media screen and (max-width: 978px) {
-  .hoc {
+  .hendhoc {
     max-width: 90%;
   }
 
@@ -445,7 +446,7 @@ footer {
   #comments input[type="reset"] {
     margin-top: 10px;
   }
-  .pagination li {
+  .hendpagination li {
     display: inline-block;
     margin: 0 5px 5px 0;
   }
@@ -456,29 +457,29 @@ footer {
 }
 
 @media screen and (max-width: 750px) {
-  .imgl,
-  .imgr {
+  .hendimgl,
+  .hendimgr {
     display: inline-block;
     float: none;
     margin: 0 0 10px 0;
   }
-  .fl_left,
-  .fl_right {
+  .hendfl_left,
+  .hendfl_right {
     display: block;
     float: none;
   }
-  .group .group > *:last-child,
-  .clear .clear > *:last-child,
-  .clear .group > *:last-child,
-  .group .clear > *:last-child {
+  .hendgroup .hendgroup > *:last-child,
+  .hendclear .hendclear > *:last-child,
+  .hendclear .hendgroup > *:last-child,
+  .hendgroup .hendclear > *:last-child {
     margin-bottom: 0;
   }
-  .one_half,
-  .one_third,
-  .two_third,
-  .one_quarter,
-  .two_quarter,
-  .three_quarter {
+  .hendone_half,
+  .hendone_third,
+  .hendtwo_third,
+  .hendone_quarter,
+  .hendtwo_quarter,
+  hend .hendthree_quarter {
     display: block;
     float: none;
     width: auto;
@@ -496,30 +497,30 @@ footer {
   #pageintro article {
     max-width: none;
   }
-  #pageintro .heading {
+  #pageintro .hendheading {
     font-size: 2rem;
   }
   #pageintro p:first-of-type {
     font-size: 1rem;
   }
 
-  .sectiontitle,
-  .testimonial article {
+  .hendsectiontitle,
+  .hendtestimonial article {
     max-width: none;
   }
-  .testimonial article {
+  .hendtestimonial article {
     text-align: left;
   }
 
-  .cta > :first-child {
+  .hendcta > :first-child {
     margin-top: 0;
     text-align: center;
   }
-  .cta footer a {
+  .hendcta footer a {
     display: inline-block;
   }
 
-  .prices li:nth-last-child(-n + 3) {
+  .hendprices li:nth-last-child(-n + 3) {
     margin-bottom: 50px;
   }
   #latest ul li:nth-last-child(-n + 3) {
