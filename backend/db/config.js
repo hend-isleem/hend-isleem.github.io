@@ -1,25 +1,7 @@
-// require("dotenv").config();
-
-// const { Pool } = require("pg");
-// const isProduction = process.env.NODE_ENV === "production";
-
-// // const connectionString = `postgresql://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_DATABASE}`
-// // const connectionString = `host=virserver.postgres.database.azure.com port=5432 dbname={${process.env.DB_DATABASE}} user=VIR@virserver password={${process.env.DB_PASSWORD}} sslmode=require`;
-// const connectionString = `host=virserver.postgres.database.azure.com port=5432 dbname={${process.env.DB_DATABASE}} user=VIR_DB_user@virserver password={123} sslmode=require`;
-
-// const pool = new Pool({
-//   connectionString: isProduction ? process.env.DATABASE_URL : connectionString,
-//   ssl: isProduction,
-// });
-
-// module.exports = { pool };
-
 const pg = require("pg");
 
 const config = {
   host: "virserver.postgres.database.azure.com",
-  // Do not hard code your username and password.
-  // Consider using Node environment variables.
   user: "VIR@virserver",
   password: "123456_l",
   database: "vir_db",
@@ -48,9 +30,8 @@ function queryDatabase() {
             author VARCHAR(255) NOT NULL,
             title VARCHAR(255) NOT NULL
           );
-          
-          INSERT INTO books (author, title)
-          VALUES  ('J.K. Rowling', 'Harry Potter');
+        INSERT INTO books (author, title)
+        VALUES  ('J.K. Rowling', 'Harry Potter');
     `;
 
   client
@@ -61,7 +42,7 @@ function queryDatabase() {
     })
     .catch((err) => console.log(err))
     .then(() => {
-      console.log("Finished execution, exiting now");
+      //   console.log("Finished execution, exiting now");
       //   process.exit();
     });
 }
@@ -89,4 +70,5 @@ const addBook = (request, response) => {
     }
   );
 };
-module.exports = { config, getBooks, addBook };
+
+module.exports = {getBooks, addBook };
