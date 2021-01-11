@@ -2014,7 +2014,7 @@ ul{
 	    padding-top: 170px;
     padding-bottom: 170px;
 	background:url('../images/content/condi_bg.jpg') 50% 0 repeat-y;
-	background-position":center 0;
+	background-position:center 0;
 	background-size:cover;
 	background-repeat:no-repeat;
 	position:relative;
@@ -14701,7 +14701,6 @@ html {
   .popover.right > .arrow:after {
     bottom: -10px;
     left: 1px;
-    content: " ";
     border-right-color: #fff;
     border-left-width: 0;
   }
@@ -14716,7 +14715,6 @@ html {
   .popover.bottom > .arrow:after {
     top: 1px;
     margin-left: -10px;
-    content: " ";
     border-top-width: 0;
     border-bottom-color: #fff;
   }
@@ -14731,7 +14729,6 @@ html {
   .popover.left > .arrow:after {
     right: 1px;
     bottom: -10px;
-    content: " ";
     border-right-width: 0;
     border-left-color: #fff;
   }
@@ -14992,7 +14989,6 @@ html {
   .modal-footer:before,
   .modal-footer:after {
     display: table;
-    content: " ";
   }
   .clearfix:after,
   .dl-horizontal dd:after,
