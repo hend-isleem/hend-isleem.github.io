@@ -12,24 +12,67 @@
   https://t4.ftcdn.net/jpg/02/05/61/43/240_F_205614362_S4WAYhSGOmioA4UJXS0X737j0pLm0apJ.jpg
   https://t4.ftcdn.net/jpg/03/56/04/97/240_F_356049725_UvW2FSyPH4E0QR0sJX8o3KUKpKSpzswJ.jpg*/
 
-.companyHeader {
-  background-image: url(../../images/Lyna_company_images/company-profile-header.jpg);
-  height: 300px;
+.jp_tittle_main_wrapper  {
+  position: relative;
+  float: left;
   width: 100%;
-  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: url(../../images/Lyna_company_images/company-profile-header.jpg) center 0px / cover no-repeat;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center
+  background-position: center 0px;
 }
 
+.jp_tittle_img_overlay {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  background: #0e1427d9;
+}
 
-.companyFooter {
-  background-color: black;
-  height: 400px;
+*, *::before, *::after {
+  transition: all 0.3s ease-in-out;
 }
 
 .breif_description {
   text-align: center;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-xs-12 {
+  width: 100%;
+}
+
+.col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.jp_tittle_heading {
+  float: left;
+  width: 100%;
+}
+
+.jp_tittle_heading h2 {
+  font-size: 36px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
 .company_p {
