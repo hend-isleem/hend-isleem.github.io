@@ -14,6 +14,12 @@
     margin: 5%;
 }
 
+.w3-table-all-app {
+  width: 100%;
+  height: 70%;
+  overflow:scroll;
+}
+
 .jp_tittle_main_wrapper  {
   position: relative;
   float: left;
@@ -124,11 +130,11 @@ input[type=submit]:hover {
 
 .company_div {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: white;
     padding: 10px;
 }
 .company_div_list{
-    margin: 10%;
+    margin: 20%;
 }
 .NavChoice {
     position: sticky;
