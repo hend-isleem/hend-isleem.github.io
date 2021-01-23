@@ -1,0 +1,156 @@
+.flex-cont,.response{
+    display: flex;
+}
+
+.response{
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.w3-table-all {
+    width: 100%;
+    height: 70%;
+    overflow:scroll;
+    margin: 5%;
+}
+
+.w3-table-all-app {
+  width: 100%;
+  height: 70%;
+  overflow:scroll;
+}
+
+.jp_tittle_main_wrapper  {
+  position: relative;
+  float: left;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: url(https://t4.ftcdn.net/jpg/03/56/04/97/240_F_356049725_UvW2FSyPH4E0QR0sJX8o3KUKpKSpzswJ.jpg) center 0px / cover no-repeat  !important;
+  background-repeat: no-repeat;
+  background-position: center 0px;
+}
+
+.jp_tittle_img_overlay {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  background: #0e1427d9;
+}
+
+*, *::before, *::after {
+  transition: all 0.3s ease-in-out;
+}
+
+.breif_description {
+  text-align: center;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-xs-12 {
+  width: 100%;
+}
+
+.col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.jp_tittle_heading {
+  float: left;
+  width: 100%;
+}
+
+.jp_tittle_heading h2 {
+  font-size: 36px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.photo{
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+}
+
+.company_photo{
+    border-radius: 50%;
+    width: 15em;
+    height: 10em;
+}
+.company_a{
+    color: black!important;
+}
+.accept{
+    background-color:rgb(233, 76, 55);
+}
+.reject{
+    background-color: rgb(39, 146, 39);
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    }
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.company_div {
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+}
+.company_div_list{
+    margin: 20%;
+}
+.NavChoice {
+    position: sticky;
+    top: 0px;
+    background-color:#f2f2f2;
+  }
+
+.company_div_table{
+    width: 86%;
+}
+
+.flex_container1{
+    justify-content: center;
+}
+
+th{
+    background-color: white!important;
+    color: black!important;
+}
