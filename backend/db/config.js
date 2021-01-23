@@ -1,23 +1,20 @@
 const pg = require("pg");
 const faker = require("faker"); // for dummy Data
 var md5 = require("md5");
-// const Pool = require("pg").Pool;
-// //import { Pool } from "pg";
+// const Sequelize = require("sequelize");
+// const db = require("config");
 
-// const pool = new Pool({
-//   // user: "postgres",
-//   // password: "2744",
-//   // host: "localhost",
-//   // port: 5432,
-//   // database: "jobring",
-//   host: "localhost",
-//   user: "postgres",
-//   password: "2744",
-//   database: "virdb",
-//   port: 5432,
+// const Post = db.define("post", {
+//   description: {
+//     type: Sequelize.STRING,
+//   },
 // });
 
-// module.exports = pool;
+// Post.sync().then(() => {
+//   console.log("table created");
+// });
+// module.exports = Post;
+
 const config = {
   // host: "virfserver.postgres.database.azure.com",
   // user: "VIR@virfserver",
@@ -110,6 +107,23 @@ const getBooks = (request, response) => {
     }
   );
 };
+
+const adduser = (request, response) => {
+  // let passw = response.passw;
+  // let email = response.email;
+  console.log(">> " + passw + "  " + email);
+  client.query(
+    "insert into users values ($1, $2) returning *",
+    [email.passw],
+    (error, results) => {
+      if (error) {
+        throw error;
+      }
+      response.status(200).json(results.rows);
+    }
+  );
+};
+
 const getName = (request, response) => {
   client.query("select full_name from student limit 1", (error, results) => {
     if (error) {
@@ -135,4 +149,4 @@ const addBook = (request, response) => {
   );
 };
 
-module.exports = { getBooks, addBook, getName };
+module.exports = { getBooks, addBook, getName, adduser };
